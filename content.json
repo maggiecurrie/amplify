@@ -1,226 +1,277 @@
 {
-  "company": "Velocity Labs",
-  "note": "Fictional sample library. Velocity Labs, its customers, teams, athletes, people, quotes and figures are all invented.",
+  "company": "Ledgerly",
+  "note": "Fictional sample library. Ledgerly, its customers, people, quotes and figures are all invented.",
   "items": [
     {
-      "id": "jordyn-reyes-comeback",
-      "title": "Jordyn Reyes: back on the court, and stronger",
+      "id": "rosas-bakery",
+      "title": "Rosa's Bakery: from chasing invoices to Sunday dinners",
       "type": "Customer story",
-      "format": "Video · 2 min",
-      "date": "2026-11-19",
-      "themes": ["Injury and recovery", "Athlete stories"],
-      "headline": "Back in 7 months",
-      "summary": "Jordyn Reyes, a point guard at Lakeshore University, tore her ACL in her junior season. Her performance staff used Velocity Labs data to guide every stage of her return. Seven months later she was back on the court, with the strongest vertical jump of her career.",
+      "format": "Video · 90 sec",
+      "date": "2026-11-18",
+      "themes": ["Late payments", "Small business life"],
+      "headline": "64 days → 9 days",
+      "summary": "Rosa Delgado runs a 12-person bakery supplying cafés across the city. Her wholesale customers paid on average 64 days late, so she spent Sunday nights chasing invoices. With Ledgerly she gets paid in 9 days, and has her Sundays back.",
       "link": "",
       "quotes": [
-        "The data didn't rush me back. It told me when I was ready.",
-        "I trusted the numbers on the days I didn't trust my knee.",
-        "My first game back, I didn't think about my knee once. That's when I knew."
+        "I used to spend Sunday nights chasing invoices. Now I spend them with my kids.",
+        "I opened a bakery to bake. Not to be a debt collector.",
+        "The first month the money came in on time, I cried in the walk-in fridge."
       ],
-      "quoteBy": "Jordyn Reyes, Point Guard, Lakeshore University",
+      "quoteBy": "Rosa Delgado, Owner, Rosa's Bakery",
       "graphics": [
-        {"file": "assets/quote-card-1.png", "label": "When I was ready"},
-        {"file": "assets/quote-card-2.png", "label": "Back in 7 months"},
-        {"file": "assets/quote-card-3.png", "label": "Trust the numbers"}
+        {"file": "assets/quote-card-sunday-nights.png", "label": "Sunday nights"},
+        {"file": "assets/quote-card-9-days.png", "label": "64 → 9 days"},
+        {"file": "assets/quote-card-bake.png", "label": "Bake, not chase"}
       ],
       "captions": {
-        "Sales": "\"The data didn't rush me back. It told me when I was ready.\"\n\nThat's Jordyn Reyes, point guard at Lakeshore University, seven months after an ACL tear.\n\n[YOUR STORY: one sentence about a coach or performance lead you've talked to who's faced a return-to-play call like this.]\n\nThe hardest decision in sport is when to say \"go.\" Data makes it a little less of a guess.",
-        "Leadership": "This is why we build what we build.\n\nJordyn Reyes tore her ACL in her junior season. Her staff used our data to guide every step of her comeback, and seven months later she was back, with the best vertical jump of her career.\n\n[YOUR STORY: one sentence on what stories like Jordyn's mean to you personally.]\n\nTechnology doesn't heal athletes. It helps the people who do.",
-        "Customer Success": "\"I trusted the numbers on the days I didn't trust my knee.\"\n\nWorking alongside Lakeshore's performance staff on Jordyn's return was one of the highlights of my year.\n\n[YOUR STORY: one sentence about a moment with a team you've supported that felt like this.]\n\nWelcome back, Jordyn. 🏀",
-        "Anyone": "Meet Jordyn. 🏀\n\nShe tore her ACL in her junior season. Seven months later, she was back on the court, stronger than before.\n\n[YOUR STORY: one sentence on why this made you proud to work here.]"
+        "Sales": "\"I opened a bakery to bake. Not to be a debt collector.\"\n\nThat's Rosa Delgado. She runs a 12-person bakery, and until this year she spent her Sunday nights chasing invoices.\n\n[YOUR STORY: one sentence about a customer or prospect you've talked to who felt the same way.]\n\nHer customers used to take 64 days to pay. Now it's 9.\n\nIf late payments are eating your weekends, I'd love to hear how you handle it.",
+        "Leadership": "This is why we do what we do.\n\nRosa Delgado runs a 12-person bakery. Her customers took 64 days, on average, to pay her. So every Sunday night, instead of being with her kids, she was chasing invoices.\n\nToday she gets paid in 9 days. And she has her Sundays back.\n\n[YOUR STORY: one sentence on what this means to you personally.]\n\nSmall businesses don't need more software. They need their time back.",
+        "Customer Success": "\"The first month the money came in on time, I cried in the walk-in fridge.\"\n\nRosa Delgado, owner of Rosa's Bakery, told us that, and it's my favourite part of this job.\n\n[YOUR STORY: one sentence about a moment with a customer you've supported that felt like this.]\n\n64 days to get paid → 9 days. Proud of this one.",
+        "Anyone": "Meet Rosa. 🥐\n\nShe runs a bakery, and she used to spend her Sunday nights chasing late invoices.\n\nNow she gets paid in 9 days instead of 64, and spends those Sundays with her kids.\n\n[YOUR STORY: one sentence on why this made you proud to work here.]"
       },
       "makeItYours": [
-        "Which athlete or team does Jordyn remind you of?",
-        "Have you ever come back from an injury? What helped?",
+        "Which customer of yours does Rosa remind you of?",
+        "When did you last see a business owner stressed about getting paid?",
         "Why does this story matter to you, not just to the company?"
       ]
     },
     {
-      "id": "state-of-athlete-load-2026",
-      "title": "The State of Athlete Load 2026",
+      "id": "late-payment-report-2026",
+      "title": "The Late Payment Report 2026",
       "type": "Report",
-      "format": "PDF · 22 pages",
-      "date": "2026-11-13",
-      "themes": ["Industry data", "Injury and recovery"],
-      "headline": "62% say load is the #1 risk",
-      "summary": "Our yearly survey of 300 performance staff across pro and college sport. 62% say sudden spikes in training load are their biggest injury risk, yet only 1 in 4 track load every day.",
+      "format": "PDF · 18 pages",
+      "date": "2026-11-12",
+      "themes": ["Late payments", "Industry data"],
+      "headline": "1 in 3 invoices paid late",
+      "summary": "Our yearly survey of 1,200 small businesses. One in three invoices is paid late, the average late invoice is 23 days overdue, and 41% of owners have skipped their own pay to cover the gap.",
       "link": "",
       "quotes": [
-        "62% of performance staff say training load spikes are their biggest injury risk.",
-        "Only 1 in 4 teams track athlete load every single day.",
-        "The gap between knowing and measuring is where injuries happen."
+        "41% of small business owners have skipped their own paycheque to cover a late payment.",
+        "The average late invoice arrives 23 days after it's due.",
+        "Owners who automate reminders get paid 2x faster."
       ],
-      "quoteBy": "The State of Athlete Load 2026, Velocity Labs",
+      "quoteBy": "The Late Payment Report 2026, Ledgerly",
       "graphics": [],
       "captions": {
-        "Sales": "62% of performance staff say training load spikes are their biggest injury risk.\n\nOnly 1 in 4 track it every day.\n\n[YOUR STORY: one sentence about a conversation where you heard this gap firsthand.]\n\nOur 2026 State of Athlete Load report is out. Link in the comments.",
-        "Leadership": "We surveyed 300 performance staff this year. The finding I keep coming back to: almost everyone knows load is the risk, but very few measure it daily.\n\n[YOUR STORY: one sentence on why this gap matters to you.]\n\nThe gap between knowing and measuring is where injuries happen.",
-        "Anyone": "New research from our team: 62% of performance staff say load spikes are their biggest injury risk. 📊\n\n[YOUR STORY: one sentence on the stat that surprised you most.]"
+        "Sales": "41% of small business owners have skipped their own pay to cover a late invoice.\n\nThat stat from our new Late Payment Report stopped me in my tracks.\n\n[YOUR STORY: one sentence about a business owner you've met who's been there.]\n\nThe good news: owners who automate their reminders get paid 2x faster. Full report in the comments.",
+        "Leadership": "We surveyed 1,200 small businesses this year. The number I can't stop thinking about: 41% have skipped their own pay to cover a late payment.\n\n[YOUR STORY: one sentence on why this number matters to you.]\n\nLate payments aren't an admin problem. They're a people problem. The full Late Payment Report is out today.",
+        "Anyone": "1 in 3 invoices is paid late. 📊\n\nOur new Late Payment Report is out, and it's eye-opening.\n\n[YOUR STORY: one sentence on the stat that surprised you most, and why.]"
       },
       "makeItYours": [
         "Which stat surprised you most?",
-        "Have you seen an athlete get hurt after a sudden jump in training?",
-        "What would you tell a coach reading this?"
+        "Have you, or someone you know, been paid late? What did it cost them?",
+        "What would you tell a business owner reading this?"
       ]
     },
     {
-      "id": "webinar-coaches-win-games",
-      "title": "Webinar: Data Doesn't Win Games. Coaches Do.",
+      "id": "webinar-cash-flow-story",
+      "title": "Webinar: Cash Flow Is a Story, Not a Spreadsheet",
       "type": "Webinar",
-      "format": "Recording · 40 min",
-      "date": "2026-10-28",
-      "themes": ["Coaching", "Human + data"],
-      "headline": "Coaches win games",
-      "summary": "Our Head of Sports Science sat down with three coaches to talk about where data helps, where it doesn't, and why the best decisions still come from people who know their athletes.",
+      "format": "Recording · 30 min",
+      "date": "2026-10-29",
+      "themes": ["Cash flow", "Small business life"],
+      "headline": "Cash flow is a story",
+      "summary": "Our CEO, CRO and Chief Risk Officer on why small business owners talk about cash flow in moments, not numbers, and what that means for the tools they need.",
       "link": "",
       "quotes": [
-        "Data tells you what happened. A coach knows why.",
-        "The best dashboards start a conversation. They don't end it.",
-        "I don't need more numbers. I need the right three."
+        "Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.",
+        "Every late invoice is a small business owner deciding whether to pay themselves this month.",
+        "Compliance isn't the brake. It's what lets us drive fast, safely."
       ],
-      "quoteBy": "Panel, Data Doesn't Win Games. Coaches Do.",
+      "quoteBy": "Ledgerly leadership team",
       "graphics": [],
       "captions": {
-        "Leadership": "\"Data tells you what happened. A coach knows why.\"\n\nThat line from our webinar has stuck with me all month.\n\n[YOUR STORY: one sentence about a coach or leader who taught you something data couldn't.]\n\nThe recording is in the comments. 40 minutes, worth every one.",
-        "Sales": "\"I don't need more numbers. I need the right three.\"\n\nI hear a version of this from coaches every week.\n\n[YOUR STORY: one sentence about a coach who said something like this to you.]\n\nOur panel unpacked it brilliantly. Recording below.",
-        "Anyone": "Missed our webinar? Here's the line that stuck with me:\n\n\"The best dashboards start a conversation. They don't end it.\"\n\n[YOUR STORY: one sentence on why it stuck with you.]"
+        "Leadership": "\"Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.\"\n\nThat's the line I keep coming back to from our webinar last month.\n\n[YOUR STORY: one sentence about a moment that showed you this was true.]\n\nThe recording is in the comments. 30 minutes, worth it.",
+        "Sales": "Every late invoice is a small business owner deciding whether to pay themselves this month.\n\n[YOUR STORY: one sentence about a conversation where you heard this.]\n\nOur leadership team unpacked this in a 30-minute webinar. Link below if you missed it.",
+        "Anyone": "Missed our webinar? Here's the line that stuck with me:\n\n\"Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.\"\n\n[YOUR STORY: one sentence on why it stuck with you.]"
       },
       "makeItYours": [
         "Which line from the webinar stuck with you?",
-        "Who's a coach that shaped how you think?",
-        "Where have you seen data help, or get in the way?"
+        "Where have you seen cash flow stress up close?",
+        "What's one takeaway you'd pass on?"
       ]
     },
     {
-      "id": "harbour-city-fc",
-      "title": "Harbour City FC: 40% fewer hamstring injuries in one season",
-      "type": "Customer story",
-      "format": "Case study · 4 min read",
-      "date": "2026-11-06",
-      "themes": ["Injury and recovery", "Team performance"],
-      "headline": "40% fewer injuries",
-      "summary": "Harbour City FC's medical team was losing key players to hamstring injuries every season. By tracking sprint load and recovery daily, they cut hamstring injuries by 40% and kept their starting eleven fit through the playoffs.",
+      "id": "blog-what-late-payments-cost",
+      "title": "What Late Payments Really Cost a Small Business",
+      "type": "Blog",
+      "format": "Article · 6 min read",
+      "date": "2026-10-14",
+      "themes": ["Late payments", "Cash flow"],
+      "headline": "The hidden cost",
+      "summary": "Beyond the money: the hours spent chasing, the hires delayed, the owners who stop paying themselves. A plain-language breakdown of what late payments really cost.",
       "link": "",
       "quotes": [
-        "We stopped guessing who was tired. Now we know by breakfast.",
-        "The players started asking for their numbers. That's when it clicked.",
-        "Every player we keep on the pitch is a game we can win."
+        "The cost of a late payment isn't on the invoice. It's in the hours you spend chasing it.",
+        "Our best sales conversations start with listening, not a demo."
       ],
-      "quoteBy": "Dr. Lena Moreau, Head of Medical, Harbour City FC",
+      "quoteBy": "Ledgerly blog",
       "graphics": [],
       "captions": {
-        "Sales": "\"We stopped guessing who was tired. Now we know by breakfast.\"\n\nHarbour City FC cut hamstring injuries by 40% in one season.\n\n[YOUR STORY: one sentence about a team you've talked to that's fighting the same problem.]\n\nFull case study in the comments.",
-        "Customer Success": "\"The players started asking for their numbers. That's when it clicked.\"\n\nWorking with Harbour City's medical team this season has been a joy.\n\n[YOUR STORY: one sentence about a moment with this team, or one like it, that made you proud.]\n\n40% fewer hamstring injuries. ⚽",
-        "Leadership": "Every player kept on the pitch is a game a team can win.\n\nHarbour City FC cut hamstring injuries by 40% this season, and kept their starting eleven fit through the playoffs.\n\n[YOUR STORY: one sentence on why results like this matter to you.]",
-        "Anyone": "40% fewer hamstring injuries in one season. ⚽\n\nProud of what Harbour City FC's medical team pulled off.\n\n[YOUR STORY: one sentence on why this made you proud.]"
+        "Sales": "The cost of a late payment isn't on the invoice.\n\nIt's the hours spent chasing it. The hire you put off. The paycheque you skip.\n\n[YOUR STORY: one sentence about a customer who told you what late payments cost them.]\n\nGreat breakdown from our team, linked below.",
+        "Customer Success": "One of the first things customers tell me: they didn't realize how much time they spent chasing payments until they stopped.\n\n[YOUR STORY: one sentence about a customer who felt this.]\n\nThis piece explains the hidden costs really well.",
+        "Anyone": "Late payments cost more than money. ⏳\n\n[YOUR STORY: one sentence on why this matters to you.]\n\nWorth a 6-minute read."
       },
       "makeItYours": [
-        "Do you follow a team that's been hit by injuries?",
-        "What does 'keeping players on the pitch' mean to you?",
-        "What part of this story would you share with a friend?"
+        "What hidden cost have you seen a business pay?",
+        "Has a customer ever told you how much time they lost?",
+        "Who in your network should read this?"
       ]
     },
     {
-      "id": "five-recovery-mistakes",
-      "title": "5 recovery mistakes elite teams still make",
+      "id": "harbour-plumbing",
+      "title": "Harbour Plumbing hires two apprentices",
+      "type": "Customer story",
+      "format": "Video · 2 min",
+      "date": "2026-11-05",
+      "themes": ["Growth", "Small business life"],
+      "headline": "2 new apprentices",
+      "summary": "Marcus Bell's 6-person plumbing company used to hold back on hiring because cash came in too unpredictably. With steady, on-time payments, he hired two apprentices this fall.",
+      "link": "",
+      "quotes": [
+        "I didn't need more work. I needed the work I'd done to pay me on time.",
+        "Hiring used to feel like gambling. Now it feels like a plan."
+      ],
+      "quoteBy": "Marcus Bell, Owner, Harbour Plumbing",
+      "graphics": [],
+      "captions": {
+        "Sales": "\"I didn't need more work. I needed the work I'd done to pay me on time.\"\n\nMarcus Bell runs a 6-person plumbing company. Unpredictable payments kept him from hiring.\n\n[YOUR STORY: one sentence about a business owner you know who's held back for the same reason.]\n\nThis fall he hired two apprentices.",
+        "Leadership": "Two apprentices just started at Harbour Plumbing.\n\nThat's two young people learning a trade, because their future boss finally had cash flow he could plan around.\n\n[YOUR STORY: one sentence on why stories like this matter to you.]\n\nThis is the ripple effect of getting paid on time.",
+        "Anyone": "Hiring used to feel like gambling for Marcus. Now it feels like a plan. 🔧\n\n[YOUR STORY: one sentence on what this story means to you.]"
+      },
+      "makeItYours": [
+        "Do you know a business owner who's held off on hiring?",
+        "What's the ripple effect you see when a small business grows?",
+        "Why does this story make you proud?"
+      ]
+    },
+    {
+      "id": "five-invoice-mistakes",
+      "title": "5 invoice mistakes that slow down payment",
       "type": "Guide",
       "format": "Carousel · 7 slides",
       "date": "2026-11-20",
-      "themes": ["Tips", "Injury and recovery"],
-      "headline": "5 recovery mistakes",
-      "summary": "A quick, practical carousel: treating rest days as optional, ignoring sleep, same recovery for every athlete, reacting instead of planning, and not asking athletes how they feel.",
+      "themes": ["Tips", "Late payments"],
+      "headline": "5 invoice mistakes",
+      "summary": "A quick, practical carousel: vague due dates, missing PO numbers, one payment option, no reminders, and sending invoices late. Each with a simple fix.",
       "link": "",
       "quotes": [
-        "Recovery isn't the opposite of training. It's part of it.",
-        "The cheapest performance tool in sport is still sleep."
+        "Net 30 isn't a due date. A date is a due date.",
+        "The easiest invoice to pay is the one with a 'Pay now' button."
       ],
-      "quoteBy": "Velocity Labs guide",
+      "quoteBy": "Ledgerly guide",
       "graphics": [],
       "captions": {
-        "Sales": "The cheapest performance tool in sport is still sleep.\n\n[YOUR STORY: one sentence about the most common recovery mistake you've seen.]\n\nHere are 5 recovery mistakes even elite teams still make. 👇",
-        "Customer Success": "These are the 5 recovery habits I talk through with almost every new team.\n\n[YOUR STORY: one sentence about a team that changed one of these and saw a difference.]",
-        "Anyone": "Recovery isn't the opposite of training. It's part of it. 😴\n\n5 mistakes elite teams still make. Save this one.\n\n[YOUR STORY: one sentence on which tip you'd use yourself.]"
+        "Sales": "The #1 invoice mistake I see? \"Net 30\" instead of an actual date.\n\n[YOUR STORY: one sentence about the most common invoice mistake you've seen.]\n\nHere are 5 quick fixes that get you paid faster. 👇",
+        "Customer Success": "Small changes, big difference. These are the 5 invoice fixes I recommend to almost every customer.\n\n[YOUR STORY: one sentence about a customer who got paid faster after one of these.]",
+        "Anyone": "5 invoice mistakes that slow down payment, and how to fix them. Save this one. 📌\n\n[YOUR STORY: one sentence on which tip you'd use first.]"
       },
       "makeItYours": [
-        "Which mistake have you made yourself?",
+        "Which mistake do you see most often?",
         "Which tip would help someone you know?",
-        "What's your own best recovery habit?"
+        "Have you ever made one of these mistakes yourself?"
       ]
     },
     {
-      "id": "pulse-3-launch",
-      "title": "Introducing Pulse 3: our lightest wearable yet",
-      "type": "Product update",
-      "format": "Launch video · 60 sec",
-      "date": "2026-11-11",
-      "themes": ["Product", "Human + data"],
-      "headline": "Meet Pulse 3",
-      "summary": "Pulse 3 is 40% lighter than the last generation, lasts a full week on one charge, and was redesigned with input from more than 200 athletes who told us what they actually want to wear.",
+      "id": "trust-in-fintech",
+      "title": "Building Trust in Fintech, One Boring Moment at a Time",
+      "type": "Blog",
+      "format": "Article · 5 min read",
+      "date": "2026-09-30",
+      "themes": ["Trust and security"],
+      "headline": "Trust is boring",
+      "summary": "Our Chief Risk & Compliance Officer on why trust in fintech is built in the moments customers never notice, like every transaction that simply works.",
       "link": "",
       "quotes": [
-        "The best wearable is the one athletes forget they're wearing.",
-        "We asked 200 athletes what they wanted. Then we listened."
+        "Trust in fintech is earned in boring moments, like every transaction that just works.",
+        "Small businesses don't read our security policy. They feel it when nothing goes wrong."
       ],
-      "quoteBy": "Velocity Labs product team",
+      "quoteBy": "Priya Shah, Chief Risk & Compliance Officer, Ledgerly",
       "graphics": [],
       "captions": {
-        "Sales": "The best wearable is the one athletes forget they're wearing.\n\n[YOUR STORY: one sentence about a team or athlete who'll love this.]\n\nPulse 3 is here: 40% lighter, a full week of battery, designed with 200+ athletes.",
-        "Customer Success": "The feedback I've heard most from athletes this year: \"make it lighter.\"\n\nWe did. 🎉\n\n[YOUR STORY: one sentence about the athlete or team who asked you for this.]",
-        "Leadership": "We asked 200 athletes what they wanted from a wearable. Then we actually listened.\n\n[YOUR STORY: one sentence on what you're proudest of in this launch.]\n\nMeet Pulse 3.",
-        "Anyone": "New from Velocity Labs: Pulse 3. ⌚\n\n[YOUR STORY: one sentence on why you're excited about it.]"
+        "Leadership": "\"Small businesses don't read our security policy. They feel it when nothing goes wrong.\"\n\n[YOUR STORY: one sentence on what trust means in your role.]\n\nOur Chief Risk Officer wrote a great piece on why trust is built in boring moments.",
+        "Customer Success": "Customers rarely notice when everything works. That's the point.\n\n[YOUR STORY: one sentence about a time a customer told you they trust us, and why.]\n\nGreat read from our risk team.",
+        "Anyone": "Trust is built in boring moments. 🔒\n\n[YOUR STORY: one sentence on why this resonates with you.]"
       },
       "makeItYours": [
-        "Which athlete or team will love this most?",
-        "What part of building this were you close to?",
-        "What's one thing you'd tell someone trying it for the first time?"
+        "What does trust look like in your day-to-day work?",
+        "When did a customer show they trusted us?",
+        "What 'boring moment' are you proud of?"
       ]
     },
     {
-      "id": "team-spotlight-theo",
-      "title": "Team spotlight: Theo, Sports Scientist",
+      "id": "fall-product-update",
+      "title": "Fall product update: Smart Reminders",
+      "type": "Product update",
+      "format": "Video · 60 sec",
+      "date": "2026-11-10",
+      "themes": ["Product", "Late payments"],
+      "headline": "Smart Reminders",
+      "summary": "Smart Reminders sends friendly, perfectly timed nudges to customers who haven't paid, so owners never have to write an awkward follow-up email again.",
+      "link": "",
+      "quotes": [
+        "Nobody started a business to write awkward 'just following up' emails.",
+        "Smart Reminders get invoices paid an average of 11 days sooner."
+      ],
+      "quoteBy": "Ledgerly product team",
+      "graphics": [],
+      "captions": {
+        "Sales": "Nobody started a business to write awkward \"just following up\" emails.\n\n[YOUR STORY: one sentence about a customer who'll love this.]\n\nSmart Reminders is live: friendly, well-timed nudges that get invoices paid an average of 11 days sooner.",
+        "Customer Success": "The feature request I've heard most this year is finally here. 🎉\n\n[YOUR STORY: one sentence about the customer who asked you for this.]\n\nSmart Reminders: no more awkward follow-up emails.",
+        "Anyone": "New at Ledgerly: Smart Reminders. ⏰\n\n[YOUR STORY: one sentence on why you're excited about it.]"
+      },
+      "makeItYours": [
+        "Which customer will love this most?",
+        "What's the most awkward follow-up email you've had to send?",
+        "What part of building this were you close to?"
+      ]
+    },
+    {
+      "id": "team-spotlight-amara",
+      "title": "Team spotlight: Amara, Support Lead",
       "type": "Culture",
       "format": "Photo post + Q&A",
       "date": "2026-11-21",
       "themes": ["Culture", "Our team"],
-      "headline": "Meet Theo",
-      "summary": "Theo ran distance in college until a stress fracture ended his season. Now he helps teams catch the warning signs he missed. He talks about the injury that changed his path, and why he still runs every morning.",
+      "headline": "Meet Amara",
+      "summary": "Amara has answered more than 6,000 customer calls at Ledgerly. She talks about the call she'll never forget and why she still loves picking up the phone.",
       "link": "",
       "quotes": [
-        "I build the tool I wish my college team had.",
-        "Every number on a dashboard is someone's season."
+        "Behind every support ticket is someone's livelihood. I never forget that.",
+        "The best call is the one where someone laughs at the end."
       ],
-      "quoteBy": "Theo Grant, Sports Scientist, Velocity Labs",
+      "quoteBy": "Amara Osei, Support Lead, Ledgerly",
       "graphics": [],
       "captions": {
-        "Leadership": "\"Every number on a dashboard is someone's season.\"\n\nThat's Theo, one of our sports scientists. A stress fracture ended his college running career, and now he helps teams catch the signs he missed.\n\n[YOUR STORY: one sentence about what it's like working with people like Theo.]",
-        "Anyone": "Meet Theo. 🏃 He builds the tool he wishes his college team had.\n\n[YOUR STORY: one sentence about working with him, or what you admire about him.]"
+        "Leadership": "\"Behind every support ticket is someone's livelihood.\"\n\nThat's Amara, our Support Lead. 6,000+ calls, and she still means it every time.\n\n[YOUR STORY: one sentence about a moment you saw Amara (or your support team) at their best.]",
+        "Anyone": "Meet Amara. 💬 6,000+ customer calls and still loves picking up the phone.\n\n[YOUR STORY: one sentence about what it's like working with her.]"
       },
       "makeItYours": [
-        "What's one thing you've learned from Theo or the science team?",
+        "What's one thing you've learned from Amara or the support team?",
         "Why are you proud of the people you work with?",
-        "Is there a setback that changed your own path?"
+        "What does great support look like to you?"
       ]
     },
     {
-      "id": "sports-tech-summit-2026",
-      "title": "Recap: Sports Tech Summit 2026",
+      "id": "small-business-summit",
+      "title": "Recap: Small Business Summit 2026",
       "type": "Event",
-      "format": "Photo recap · 10 images",
+      "format": "Photo recap · 8 images",
       "date": "2026-10-22",
-      "themes": ["Events", "Coaching"],
+      "themes": ["Events", "Small business life"],
       "headline": "Summit recap",
-      "summary": "Highlights from our booth and keynote at the Sports Tech Summit: 500+ conversations, a packed session on athlete wellbeing, and a live Pulse 3 demo with a pro sprinter.",
+      "summary": "Highlights from our booth and keynote at the Small Business Summit: 400+ conversations, a packed session on cash flow, and a lot of coffee.",
       "link": "",
       "quotes": [
-        "Coaches don't want more data. They want more certainty.",
-        "The future of sports tech is quieter, not louder."
+        "Customers don't buy software. They buy back their Friday afternoons.",
+        "If you can't explain the value in one sentence to a bakery owner, you don't understand it yet."
       ],
-      "quoteBy": "Ana Silva, Chief Revenue Officer, Velocity Labs",
+      "quoteBy": "David Okafor, Chief Revenue Officer, Ledgerly",
       "graphics": [],
       "captions": {
-        "Sales": "500+ conversations at the Sports Tech Summit, and one theme kept coming up: coaches don't want more data. They want more certainty.\n\n[YOUR STORY: one sentence about a conversation that stuck with you.]",
-        "Leadership": "My takeaway from the Sports Tech Summit: the future of sports tech is quieter, not louder.\n\n[YOUR STORY: one sentence about a moment from the event.]",
-        "Anyone": "What a week at the Sports Tech Summit! ⚡\n\n[YOUR STORY: one sentence about your favourite moment.]"
+        "Sales": "400+ conversations at the Small Business Summit, and one line kept coming up: \"I just want my Friday afternoons back.\"\n\n[YOUR STORY: one sentence about a conversation that stuck with you.]",
+        "Leadership": "What I took away from the Small Business Summit: business owners don't want more tools. They want more time.\n\n[YOUR STORY: one sentence about a moment from the event.]",
+        "Anyone": "What a week at the Small Business Summit! ☕\n\n[YOUR STORY: one sentence about your favourite moment.]"
       },
       "makeItYours": [
         "What conversation from the event stuck with you?",
@@ -229,110 +280,56 @@
       ]
     },
     {
-      "id": "podcast-why-i-started",
-      "title": "Podcast: Why I started Velocity Labs",
+      "id": "podcast-founder-origin",
+      "title": "Podcast: Why I started Ledgerly",
       "type": "Podcast",
-      "format": "Episode · 28 min",
-      "date": "2026-09-17",
-      "themes": ["Our story", "Injury and recovery"],
-      "headline": "The career that ended",
-      "summary": "Our co-founder and CEO, Sam Okoro, a former physiotherapist, on the Performance Room podcast: the teammate whose career ended too early, and the moment he decided there had to be a better way.",
+      "format": "Episode · 25 min",
+      "date": "2026-09-16",
+      "themes": ["Our story", "Small business life"],
+      "headline": "The kitchen table",
+      "summary": "Our CEO, Maya Chen, on the Main Street Money podcast: her dad's restaurant, the kitchen table after midnight, and the moment she decided to build Ledgerly.",
       "link": "",
       "quotes": [
-        "I watched a 22-year-old's career end on a Tuesday afternoon. I still think about it.",
-        "We didn't set out to build a gadget. We set out to give athletes more years."
+        "My dad never called it cash flow management. He called it 'the bills.'",
+        "We didn't start Ledgerly to build software. We started it because of a kitchen table after midnight."
       ],
-      "quoteBy": "Sam Okoro, Co-founder & CEO, Velocity Labs",
+      "quoteBy": "Maya Chen, CEO, Ledgerly",
       "graphics": [],
       "captions": {
-        "Leadership": "\"We didn't set out to build a gadget. We set out to give athletes more years.\"\n\nOur CEO Sam told the Velocity Labs origin story on the Performance Room podcast.\n\n[YOUR STORY: one sentence on why you joined, or why this story matters to you.]",
-        "Anyone": "Ever wondered why Velocity Labs exists? It started with a career that ended too early. 🎧\n\n[YOUR STORY: one sentence on what drew you to work here.]"
+        "Leadership": "\"My dad never called it cash flow management. He called it 'the bills.'\"\n\nOur CEO Maya told the Ledgerly origin story on the Main Street Money podcast.\n\n[YOUR STORY: one sentence on why you joined, or why this story matters to you.]",
+        "Anyone": "Ever wondered why Ledgerly exists? It started at a kitchen table after midnight. 🎧\n\n[YOUR STORY: one sentence on what drew you to work here.]"
       },
       "makeItYours": [
-        "Why did you join Velocity Labs?",
-        "Does Sam's story remind you of anyone?",
+        "Why did you join Ledgerly?",
+        "Does Maya's story remind you of anyone in your life?",
         "What's your favourite part of the episode?"
       ]
     },
     {
-      "id": "coach-is-the-algorithm",
-      "title": "The coach is still the algorithm",
-      "type": "Thought leadership",
-      "format": "Article · 5 min read",
-      "date": "2026-10-08",
-      "themes": ["Human + data", "Coaching"],
-      "headline": "The coach is the algorithm",
-      "summary": "Our CEO's take on AI in sport: why the smartest teams use data to sharpen human judgment, not replace it, and what that means for how sports tech should be built.",
-      "link": "",
-      "quotes": [
-        "AI can spot a pattern. Only a coach can see a person.",
-        "The best technology in sport makes humans better at being human."
-      ],
-      "quoteBy": "Sam Okoro, Co-founder & CEO, Velocity Labs",
-      "graphics": [],
-      "captions": {
-        "Leadership": "\"AI can spot a pattern. Only a coach can see a person.\"\n\n[YOUR STORY: one sentence on where you've seen human judgment beat the data.]\n\nSam wrote a sharp piece on why the coach is still the algorithm. Link below.",
-        "Sales": "Every coach I talk to asks some version of the same question: will AI replace my judgment?\n\nOur CEO's answer is the best I've read.\n\n[YOUR STORY: one sentence about a coach who asked you this.]",
-        "Anyone": "The best technology in sport makes humans better at being human. 🧠\n\n[YOUR STORY: one sentence on why this resonates with you.]"
-      },
-      "makeItYours": [
-        "Where have you seen human judgment beat the data?",
-        "What do you think AI should never do in sport?",
-        "Who's a coach or leader who 'sees the person'?"
-      ]
-    },
-    {
-      "id": "northfield-rowing",
-      "title": "Northfield Rowing: training smarter for the national final",
-      "type": "Customer story",
-      "format": "Video · 3 min",
-      "date": "2026-09-24",
-      "themes": ["Team performance", "Athlete stories"],
-      "headline": "Fastest final ever",
-      "summary": "Northfield Rowing Club cut their training volume by 15% in the lead-up to nationals, guided by daily recovery data. Their eight posted the fastest final time in club history.",
-      "link": "",
-      "quotes": [
-        "We trained less and went faster. Nobody believed us until the clock did.",
-        "For the first time, the athletes trusted the rest days as much as the hard days."
-      ],
-      "quoteBy": "Mei Tanaka, Head Coach, Northfield Rowing Club",
-      "graphics": [],
-      "captions": {
-        "Sales": "\"We trained less and went faster. Nobody believed us until the clock did.\"\n\nNorthfield Rowing cut training volume by 15% before nationals, and posted the fastest final in club history.\n\n[YOUR STORY: one sentence about a coach you know who'd love to hear this.]",
-        "Customer Success": "\"For the first time, the athletes trusted the rest days as much as the hard days.\"\n\nThis is my favourite kind of win. 🚣\n\n[YOUR STORY: one sentence about a team you've supported through a big moment.]",
-        "Anyone": "Train less. Go faster. 🚣\n\nNorthfield Rowing just had the fastest final in club history.\n\n[YOUR STORY: one sentence on why this made you smile.]"
-      },
-      "makeItYours": [
-        "Have you ever done less and achieved more?",
-        "Which coach do you know who'd love this story?",
-        "What's the 'rest day' lesson in your own work?"
-      ]
-    },
-    {
-      "id": "return-to-play-checklist",
-      "title": "The return-to-play conversation checklist",
+      "id": "cash-flow-checklist",
+      "title": "The month-end cash flow checklist",
       "type": "Guide",
       "format": "One-page PDF",
       "date": "2026-08-27",
-      "themes": ["Tips", "Coaching"],
-      "headline": "Return-to-play checklist",
-      "summary": "A free one-page checklist for performance staff: the 8 conversations to have with an athlete, coach, and medical team before an athlete returns from injury.",
+      "themes": ["Tips", "Cash flow"],
+      "headline": "Month-end checklist",
+      "summary": "A free, printable one-page checklist for small business owners: the 8 things to check at the end of every month to stay ahead of cash flow surprises.",
       "link": "",
       "quotes": [
-        "The return-to-play decision is a conversation, not a number.",
-        "Ask the athlete last, and listen the longest."
+        "Ten minutes at month-end saves ten sleepless nights.",
+        "You can't fix cash flow you can't see."
       ],
-      "quoteBy": "Velocity Labs guide",
+      "quoteBy": "Ledgerly guide",
       "graphics": [],
       "captions": {
-        "Sales": "The return-to-play decision is a conversation, not a number.\n\n[YOUR STORY: one sentence about a performance lead you know who'd use this.]\n\nFree one-page checklist below. Share it with someone who needs it.",
-        "Customer Success": "The checklist I send every new performance team in their first week. 📋\n\n[YOUR STORY: one sentence about how a team has used it.]",
-        "Anyone": "Free return-to-play checklist for coaches and performance staff. 📋\n\n[YOUR STORY: one sentence on who you'd send this to.]"
+        "Sales": "Ten minutes at month-end saves ten sleepless nights.\n\n[YOUR STORY: one sentence about a business owner you know who'd use this.]\n\nFree printable checklist below. Share it with someone who needs it.",
+        "Customer Success": "The checklist I send to new customers in their first week. 📋\n\n[YOUR STORY: one sentence about how a customer has used it.]",
+        "Anyone": "Free month-end cash flow checklist. Print it, stick it on the fridge. 📋\n\n[YOUR STORY: one sentence on who you'd send this to.]"
       },
       "makeItYours": [
-        "Who in your network would use this checklist?",
-        "Which conversation on the list matters most to you?",
-        "Have you been part of a return-to-play decision?"
+        "Who in your life would use this checklist?",
+        "Which item on the list matters most?",
+        "What's a month-end habit that's helped you?"
       ]
     }
   ]
