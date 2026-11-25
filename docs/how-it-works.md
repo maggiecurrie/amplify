@@ -1,6 +1,6 @@
 # How it works: the playbook
 
-This is the operating rhythm of the Leader Voice Engine: who does what, when, and what "good" looks like at each step.
+This is the operating rhythm of Amplify: who does what, when, and what "good" looks like at each step.
 
 **The one rule:** AI never publishes. It drafts, sorts, and suggests. A human decides.
 

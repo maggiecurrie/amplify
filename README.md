@@ -1,10 +1,10 @@
-# Leader Voice Engine
+# Amplify
 
 **Human, story-led content at scale, with AI-enabled systems.**
 
-🌐 **[Visit the website](https://maggiecurrie.github.io/leader-voice-engine/)**
+🌐 **[Visit the website](https://maggiecurrie.github.io/amplify/)**
 
-Every company is sitting on great content: webinars, blogs, keynotes, reports. And every leader *should* be showing up on LinkedIn. The Leader Voice Engine connects the two. It turns content a company already has into LinkedIn posts that leaders genuinely make their own.
+Every company is sitting on great content: webinars, blogs, keynotes, reports. And every leader *should* be showing up on LinkedIn. Amplify connects the two. It turns content a company already has into LinkedIn posts that leaders genuinely make their own.
 
 > **AI does the heavy lifting. Leaders bring the story.**
 > No post goes live until a human has added something only they could add.
@@ -69,7 +69,7 @@ The [Human Edit showcase](example/ledgerly/posts/) shows an AI first draft next 
 3. Drop a piece of existing content into the [extract prompt](prompts/01-extract-quotes.md).
 4. Follow the six steps.
 
-Want to submit new content for repurposing? Open an [issue](https://github.com/maggiecurrie/leader-voice-engine/issues/new/choose) using the **New source content** form.
+Want to submit new content for repurposing? Open an [issue](https://github.com/maggiecurrie/amplify/issues/new/choose) using the **New source content** form.
 
 ---
 
