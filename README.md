@@ -73,6 +73,10 @@ This sample library is filled in by hand so people can see the experience. At a 
 
 ---
 
+## About this prototype
+
+Amplify Share Kit is a concept I designed to solve a problem I've lived as a social media manager: great content that gets one post and disappears. I shaped the idea, the flow, and the human-first principles, and built it with AI (Claude), practising exactly what it preaches.
+
 *The sample library uses a fictional fintech company, Ledgerly. All customers, people, quotes, and figures are invented.*
 
 Built by **Mary Anne Margaret Currie (Maggie)** · [LinkedIn](https://www.linkedin.com/in/mary-anne-maggie-currie/)

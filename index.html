@@ -6,7 +6,14 @@
 <title>Amplify Share Kit · Give your content longer legs</title>
 <meta name="description" content="Amplify Share Kit: a living content library your whole team can search, pick from, and share on LinkedIn, in their own voice.">
 <meta property="og:title" content="Amplify Share Kit">
-<meta property="og:description" content="Your content deserves more than one post. Give it longer legs.">
+<meta property="og:description" content="A living content library that turns what creatives make into share kits the whole team can post, in their own voice. A prototype by Maggie Currie.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maggiecurrie.github.io/amplify/">
+<meta property="og:image" content="https://maggiecurrie.github.io/amplify/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://maggiecurrie.github.io/amplify/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
@@ -174,12 +181,17 @@
     .chain { grid-template-columns:1fr; } .chain .arrow { transform:rotate(90deg); }
     .quote { flex-direction:column; align-items:flex-start; }
     .tray input { width:100%; }
+    .toolbar { position:static; }
+    .chips { flex-wrap:nowrap; overflow-x:auto; width:100%; padding-bottom:4px; scrollbar-width:none; }
+    .chips::-webkit-scrollbar { display:none; }
+    .chip { flex:0 0 auto; }
+    .filters select { flex:1 1 140px; }
   }
 </style>
 </head>
 <body>
 
-<div class="banner"><b>Amplify Share Kit</b> · sample library · Ledgerly and everything in it are fictional</div>
+<div class="banner"><b>Amplify Share Kit</b> · a working prototype by Maggie Currie · the company and content inside are fictional</div>
 
 <!-- ============ LIBRARY VIEW ============ -->
 <main id="library-view">
@@ -355,9 +367,9 @@
 
 <footer>
   <div class="wrap">
-    <strong style="color:#fff">Amplify Share Kit</strong>: give great content longer legs, with the human story left in.
-    Adding new content is one entry in <a href="https://github.com/maggiecurrie/amplify/blob/main/content.json">content.json</a> (<a href="https://github.com/maggiecurrie/amplify/blob/main/ADDING-CONTENT.md">here's how</a>).
-    Built by <a href="https://www.linkedin.com/in/mary-anne-maggie-currie/">Maggie Currie</a>. Ledgerly, its customers, people, quotes and figures are fictional.
+    <p style="margin:0 0 10px"><strong style="color:#fff">About this prototype.</strong> Amplify Share Kit is a concept I designed to solve a problem I've lived as a social media manager: great content that gets one post and disappears. I shaped the idea, the flow, and the human-first principles, and built it with AI (Claude), practising exactly what it preaches.</p>
+    <p style="margin:0 0 10px">Ledgerly, its customers, people, quotes and figures are fictional. See how it's built, or how new content gets added, <a href="https://github.com/maggiecurrie/amplify">on GitHub</a>.</p>
+    <p style="margin:0"><a href="https://www.linkedin.com/in/mary-anne-maggie-currie/">Maggie Currie</a> · Human, story-led content at scale with AI-enabled systems.</p>
   </div>
 </footer>
 
@@ -452,7 +464,7 @@ function shareBlock(item, role, prefix){
     <div class="tags" style="margin-bottom:10px"><span class="pill solid">${esc(item.type)}</span><span class="pill">${esc(item.format)}</span><span class="pill">${fmtDate(item.date)}</span></div>
     <h2 id="${prefix}-title">${esc(item.title)}</h2>
     <p class="summary">${esc(item.summary)}</p>
-    ${item.link ? `<p><a class="btn small" href="${esc(item.link)}" target="_blank" rel="noopener">Open the original ↗</a></p>` : `<p class="muted" style="font-size:0.85rem;font-style:italic">Link to the original goes here.</p>`}
+    ${item.link ? `<p><a class="btn small" href="${esc(item.link)}" target="_blank" rel="noopener">Open the original ↗</a></p>` : ""}
     <div class="share-section"><div class="eyebrow">Pull quotes</div>
       ${item.quotes.map(q => `<div class="quote"><p>"${esc(q)}"<small>${esc(item.quoteBy)}</small></p><button class="btn small" data-copy="${esc(`"${q}" (${item.quoteBy})`)}">Copy</button></div>`).join("")}
     </div>
