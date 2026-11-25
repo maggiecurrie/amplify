@@ -1,0 +1,55 @@
+name: New source content
+description: Submit a webinar, blog, talk, or report to be turned into leader posts.
+title: "[Source]: "
+labels: ["source-content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! Existing content is the fuel for the Leader Voice Engine.
+        A human will review it, pull the best quotes, and add them to the quote bank.
+  - type: input
+    id: title
+    attributes:
+      label: Content title
+      placeholder: "e.g. Webinar: Cash Flow Is a Story"
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - Webinar
+        - Podcast
+        - Keynote or talk
+        - Blog post
+        - Report
+        - Internal all-hands
+        - Customer interview
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: leaders
+    attributes:
+      label: Which leaders appear in it?
+      options:
+        - label: Maya Chen (CEO)
+        - label: David Okafor (CRO)
+        - label: Priya Shah (Chief Risk & Compliance Officer)
+        - label: Other (add in notes)
+  - type: input
+    id: link
+    attributes:
+      label: Link to the content or transcript
+  - type: textarea
+    id: highlights
+    attributes:
+      label: Moments worth listening for
+      description: Any lines or stories that stood out to you? Timestamps help.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Topics to avoid, timing, or approvals needed.
