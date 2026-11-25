@@ -52,4 +52,4 @@ One webinar becomes posts for all three, each in their own voice.
 
 *Originally designed for a real company. This is an open, generic version with a fictional example. All names and content here are invented.*
 
-Built by **Mary Anne Margaret Currie (Maggie)** · [(https://www.linkedin.com/in/mary-anne-maggie-currie/)
+Built by **Mary Anne Margaret Currie (Maggie)** · (https://www.linkedin.com/in/mary-anne-maggie-currie/)
