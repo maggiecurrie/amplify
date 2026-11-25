@@ -67,7 +67,7 @@ The [Human Edit showcase](example/ledgerly/posts/) shows an AI first draft next 
 3. Drop a piece of existing content into the [extract prompt](prompts/01-extract-quotes.md).
 4. Follow the six steps.
 
-Want to submit new content for repurposing? Open an [issue](../../issues/new/choose) using the **New source content** form.
+Want to submit new content for repurposing? Open an [issue](https://github.com/maggiecurrie/leader-voice-engine/issues/new/choose) using the **New source content** form.
 
 ---
 
