@@ -39,6 +39,16 @@ The library grows every week. Adding a new piece of content is one entry in [`co
 
 👉 **[How to add content](ADDING-CONTENT.md)** (about 5 minutes per piece)
 
+## Creatives stay at the centre
+
+A lot of AI tools try to replace the people who make content. Amplify does the opposite.
+
+1. **Creatives make the work** (human). Designers, videographers, writers, and social teams create the stories and campaigns.
+2. **AI does the prep** (AI-assisted). It organizes the library, pulls quotes, and drafts starting captions, the busywork that stops people from sharing. It never makes the content itself.
+3. **More people share it** (human). Sales, leaders, and teammates post it on their own channels and add their own story.
+
+The creative work gets more reach, not less credit. AI isn't the creator here. It's the reason more people can champion what creatives made.
+
 ## How this scales
 
 This sample library is filled in by hand so people can see the experience. At a real company publishing every week, the same system would grow on its own, with people in charge of what goes out:
