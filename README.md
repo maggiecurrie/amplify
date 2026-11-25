@@ -1,103 +1,56 @@
-# Amplify
+# Amplify Share Kit
 
-**Human, story-led content at scale, with AI-enabled systems.**
+**Your content deserves more than one post.**
 
-🌐 **[Visit the website](https://maggiecurrie.github.io/amplify/)**
-
-Every company is sitting on great content: webinars, blogs, keynotes, reports. And every leader *should* be showing up on LinkedIn. Amplify connects the two. It turns content a company already has into LinkedIn posts that leaders genuinely make their own.
-
-> **AI does the heavy lifting. Leaders bring the story.**
-> No post goes live until a human has added something only they could add.
+🌐 **[Open the live library](https://maggiecurrie.github.io/amplify/)**
 
 ---
-
-## Share kits
-
-Every new piece of content (a customer video, a webinar, a report) gets a **share kit**: one page with everything a teammate needs to post it on LinkedIn in about five minutes.
-
-- **The story** and the asset (video, graphics)
-- **Pull quotes**, copied in one click
-- **Captions by role**: sales, leadership, customer success, anyone
-- **Make it yours**: a marked gap plus three quick questions, so no two people post the same words
-- **Simple rules** for what to do and avoid
-
-👉 **[See a sample share kit: Rosa's Bakery](https://maggiecurrie.github.io/amplify/kits/rosas-bakery/)** · [Share kit template](templates/share-kit-template.md)
 
 ## The problem
 
-- Great content gets published once, then forgotten.
-- Leaders know they should post, but don't have the time or a starting point.
-- Ghostwritten and AI-written posts often sound generic, and generic erodes trust.
+Social media teams publish every week: customer videos, blogs, reports, event recaps, product news. Each piece goes up on the company page, gets a day of attention, and disappears.
 
-## The result
+It could live on every salesperson's, leader's, and teammate's LinkedIn too. Usually it doesn't, because finding the right content and writing a post takes effort, and nobody wants to post the same copy-and-paste caption as everyone else.
 
-**One webinar → 15+ LinkedIn posts → across multiple leaders → each in their own voice → each approved by them.**
+## How Amplify works
 
----
+**1. A living library.** Everything the team makes goes into one searchable library. Filter by type, theme, or role, or search for a topic, customer, or quote.
 
-## How it works
+**2. Pick, then build a share kit.** Choose the pieces you want to push this week. Amplify turns them into a **share kit**: one link you send to the whole team.
 
-| # | Step | Who leads | What happens |
-|---|---|---|---|
-| 1 | **Collect** | Human | Gather existing content: webinars, blogs, podcasts, keynotes, reports. |
-| 2 | **Extract** | AI + Human | AI surfaces the strongest quotes and ideas. A human picks the keepers. |
-| 3 | **Bank** | Human | Approved quotes go into the [quote bank](quote-bank/quotes.csv), tagged by leader, theme, and source. |
-| 4 | **Draft** | AI | AI turns a quote into a post using that leader's [voice profile](voice-profiles/). |
-| 5 | **Humanize** | Human | The leader adds a personal story, opinion, or detail. This is what makes it theirs. |
-| 6 | **Approve & post** | Human | The leader signs off. The quote is marked as used. |
+**3. Everyone shares, in their own voice.** For each piece, the kit includes:
 
-The full playbook is in **[How it works](docs/how-it-works.md)**.
-
-## Human-led, AI-powered
-
-| Humans lead | AI powers |
+| What's in it | Why |
 |---|---|
-| Deciding what matters | Pulling quotes from long content |
-| Real stories, opinions, and lived detail | First drafts in each leader's voice |
-| Judgment on tone, truth, and timing | Variations and repurposing |
-| The final call | Speed and volume |
+| **The story** | So people understand it before they share it |
+| **Pull quotes** | The best lines, copied in one click |
+| **Graphics** | Ready-made images, or quote cards generated automatically, sized for LinkedIn |
+| **Captions by role** | Sales, leadership, customer success, and anyone each get their own angle |
+| **Make it yours** | A highlighted **[YOUR STORY]** gap and three quick questions |
+| **Copy + Open LinkedIn** | From reading to posted in about a minute |
 
----
+## The human part
 
-## What's inside
+Templates and AI can do the heavy lifting, but a post only works when a real person adds one real sentence. Every caption leaves a highlighted gap for exactly that. No two people post the same words, and that's why people stop scrolling.
 
-| Folder | What it is |
+## Keeping it alive
+
+The library grows every week. Adding a new piece of content is one entry in [`content.json`](content.json), and the site updates itself.
+
+👉 **[How to add content](ADDING-CONTENT.md)** (about 5 minutes per piece)
+
+## What's in this repository
+
+| File | What it is |
 |---|---|
-| [`docs/`](docs/) | The playbook: how the system runs, week to week |
-| [`quote-bank/`](quote-bank/) | The database of approved quotes, and how to use it |
-| [`voice-profiles/`](voice-profiles/) | How each leader sounds, plus a blank template |
-| [`prompts/`](prompts/) | Tested AI prompts for each step |
-| [`checklists/`](checklists/) | The human edit and leader approval checklists |
-| [`example/ledgerly/`](example/ledgerly/) | A full worked example, from webinar to published post |
-| [`kits/`](kits/) | Share kits: one page per piece of content, ready for the team to post |
-| [`templates/`](templates/) | A blank share kit template |
-
-## See the human difference
-
-The [Human Edit showcase](example/ledgerly/posts/) shows an AI first draft next to the version the leader actually published, and explains every change. Open the file's **History** to see the side-by-side, red-and-green comparison.
-
-## Try it yourself
-
-1. Copy this repository (click **Use this template** or **Fork**).
-2. Fill in a [voice profile](voice-profiles/_template.md) for each leader.
-3. Drop a piece of existing content into the [extract prompt](prompts/01-extract-quotes.md).
-4. Follow the six steps.
-
-Want to submit new content for repurposing? Open an [issue](https://github.com/maggiecurrie/amplify/issues/new/choose) using the **New source content** form.
+| [`index.html`](index.html) | The website: library, search, kit builder, and share kits |
+| [`content.json`](content.json) | The library itself, one entry per piece of content |
+| [`assets/`](assets/) | Graphics |
+| [`ADDING-CONTENT.md`](ADDING-CONTENT.md) | Step-by-step guide and template for adding content |
 
 ---
 
-## Example company: Ledgerly (fictional)
-
-This repository uses a **fictional fintech company**, Ledgerly, which helps small businesses manage cash flow and get paid faster. It has three made-up leaders:
-
-- **Maya Chen**, CEO: visionary and warm
-- **David Okafor**, Chief Revenue Officer: direct and practical
-- **Priya Shah**, Chief Risk & Compliance Officer: thoughtful and steady
-
----
-
-*Originally designed for a real company. This is an open, generic version with a fictional example. All names, quotes, and content here are invented.*
+*The sample library uses a fictional fintech company, Ledgerly. All customers, people, quotes, and figures are invented.*
 
 Built by **Mary Anne Margaret Currie (Maggie)** · [LinkedIn](https://www.linkedin.com/in/mary-anne-maggie-currie/)
 *Human, story-led content at scale with AI-enabled systems.*
