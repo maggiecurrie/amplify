@@ -571,7 +571,7 @@ $("#kit-role").addEventListener("change", () => { const p = new URLSearchParams(
 window.addEventListener("hashchange", route);
 
 // ---------- start ----------
-fetch("content.json").then(r => r.json()).then(json => {
+fetch("content.json", { cache: "no-cache" }).then(r => r.json()).then(json => {
   COMPANY = json.company; DATA = json.items; DATA.forEach(i => byId[i.id] = i);
   newestDate = Math.max(...DATA.map(i => new Date(i.date).getTime()));
   const types = ["All", ...new Set(DATA.map(i => i.type))];
