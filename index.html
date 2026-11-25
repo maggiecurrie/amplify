@@ -4,363 +4,501 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Amplify Share Kit · Give your content longer legs</title>
-<meta name="description" content="Amplify Share Kit: one page with everything your team needs to share great content on LinkedIn, in their own voice.">
+<meta name="description" content="Amplify Share Kit: a living content library your whole team can search, pick from, and share on LinkedIn, in their own voice.">
 <meta property="og:title" content="Amplify Share Kit">
 <meta property="og:description" content="Your content deserves more than one post. Give it longer legs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
 <style>
-  :root { --ink:#000; --muted:#555; --line:#e5e5e5; --soft:#f4f4f4; --radius:14px; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#fff; line-height:1.6; font-size:17px; }
-  a { color: var(--ink); }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
-  h1, h2, h3 { font-weight:800; line-height:1.08; letter-spacing:-0.03em; margin:0 0 14px; }
-  h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); letter-spacing:-0.04em; }
-  h1 em, h2 em { font-style: italic; font-weight: 400; }
-  h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); }
-  h3 { font-size: 1.1rem; letter-spacing:-0.01em; }
-  .eyebrow { font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
-  .muted { color: var(--muted); }
-  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  :root { --ink:#000; --muted:#5a5a5a; --line:#e5e5e5; --soft:#f4f4f4; --radius:14px; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#fff; line-height:1.55; font-size:16px; }
+  a { color:var(--ink); }
+  button { font-family:inherit; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  h1, h2, h3 { font-weight:800; line-height:1.08; letter-spacing:-0.03em; margin:0 0 12px; }
+  h1 { font-size:clamp(2.3rem, 6vw, 4rem); letter-spacing:-0.045em; }
+  h1 em, h2 em { font-style:italic; font-weight:400; }
+  h2 { font-size:clamp(1.6rem, 3.6vw, 2.3rem); }
+  h3 { font-size:1.05rem; letter-spacing:-0.01em; }
+  .eyebrow { font-size:0.76rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+  .muted { color:var(--muted); }
+  [hidden] { display:none !important; }
 
-  nav { padding: 20px 0; }
-  nav .wrap { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
-  .brand { font-weight:800; letter-spacing:-0.02em; text-decoration:none; }
-  nav a.back { color: var(--muted); text-decoration:none; font-size:0.95rem; }
+  /* Top */
+  .banner { background:var(--ink); color:#bbb; font-size:0.85rem; padding:9px 0; text-align:center; border-bottom:1px solid #222; }
+  .banner b { color:#fff; }
+  .hero { background:var(--ink); color:#fff; padding:28px 0 64px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:56px; }
+  .brand { font-weight:800; letter-spacing:-0.02em; color:#fff; text-decoration:none; font-size:1.05rem; }
+  .brand em { font-weight:400; }
+  .topbar a.gh { color:#bbb; text-decoration:none; font-size:0.92rem; }
+  .hero .eyebrow { color:#999; }
+  .hero h1 { color:#fff; }
+  .hero p { font-size:1.18rem; color:#cfcfcf; max-width:700px; margin:0; }
+  .hero p strong { color:#fff; }
+  .flow { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-top:36px; }
+  .flow div { border:1px solid #333; border-radius:var(--radius); padding:16px 18px; color:#cfcfcf; font-size:0.95rem; }
+  .flow b { display:block; color:#fff; font-size:0.74rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px; }
 
-  .banner { background: var(--ink); color:#fff; font-size:0.9rem; padding:10px 0; text-align:center; }
-  .banner em { color:#bbb; }
-
-  header { padding: 48px 0 64px; }
-  .meta { display:flex; gap:10px; flex-wrap:wrap; margin: 20px 0 0; }
-  .pill { font-size:0.8rem; font-weight:600; border:1px solid var(--ink); border-radius:999px; padding:4px 12px; }
+  /* Buttons & pills */
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:9px 16px; border-radius:999px; font-weight:600; font-size:0.9rem; text-decoration:none; cursor:pointer; border:1.5px solid var(--ink); background:#fff; color:var(--ink); white-space:nowrap; }
+  .btn:hover { background:var(--ink); color:#fff; }
+  .btn.primary { background:var(--ink); color:#fff; }
+  .btn.primary:hover { background:#333; }
+  .btn.small { padding:6px 12px; font-size:0.82rem; }
+  .btn.added { background:var(--ink); color:#fff; }
+  .btn.light { border-color:#fff; background:transparent; color:#fff; }
+  .btn.light:hover { background:#fff; color:#000; }
+  .btns { display:flex; gap:8px; flex-wrap:wrap; }
+  .pill { display:inline-block; font-size:0.74rem; font-weight:600; border:1px solid var(--ink); border-radius:999px; padding:2px 9px; }
   .pill.solid { background:var(--ink); color:#fff; }
 
-  .steps-mini { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:14px; margin-top:36px; }
-  .steps-mini div { background: var(--soft); border-radius: var(--radius); padding:18px 20px; }
-  .steps-mini b { display:block; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px; }
+  /* Library */
+  .library { padding:48px 0 120px; }
+  .lib-head { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; flex-wrap:wrap; margin-bottom:22px; }
+  .toolbar { position:sticky; top:0; z-index:5; background:rgba(255,255,255,0.96); backdrop-filter:blur(6px); padding:14px 0; border-bottom:1px solid var(--line); margin-bottom:24px; }
+  .search { width:100%; padding:14px 18px; border:1.5px solid var(--ink); border-radius:999px; font-size:1rem; font-family:inherit; }
+  .search:focus { outline:3px solid #ccc; }
+  .filters { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; align-items:center; }
+  .chips { display:flex; gap:6px; flex-wrap:wrap; }
+  .chip { padding:6px 13px; border-radius:999px; border:1px solid #bbb; background:#fff; font-size:0.85rem; font-weight:500; cursor:pointer; }
+  .chip[aria-pressed="true"] { background:var(--ink); color:#fff; border-color:var(--ink); }
+  select { padding:7px 12px; border-radius:999px; border:1px solid #bbb; font-family:inherit; font-size:0.85rem; background:#fff; cursor:pointer; }
+  .count { font-size:0.9rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:18px; }
+  .card { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column; background:#fff; transition:border-color .15s, transform .15s; }
+  .card:hover { border-color:var(--ink); transform:translateY(-2px); }
+  .thumb { aspect-ratio:16/9; display:flex; flex-direction:column; justify-content:space-between; padding:16px 18px; cursor:pointer; border:none; text-align:left; width:100%; font-family:inherit; }
+  .thumb.dark { background:var(--ink); color:#fff; }
+  .thumb.light { background:var(--soft); color:var(--ink); }
+  .thumb small { font-size:0.68rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; opacity:0.7; }
+  .thumb strong { font-size:1.5rem; font-weight:800; letter-spacing:-0.03em; line-height:1.05; }
+  .card-body { padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .card-body h3 { margin:0; font-size:1rem; line-height:1.3; }
+  .card-meta { font-size:0.82rem; color:var(--muted); }
+  .tags { display:flex; gap:6px; flex-wrap:wrap; }
+  .tag { font-size:0.72rem; background:var(--soft); padding:2px 8px; border-radius:6px; color:#333; }
+  .card-actions { display:flex; gap:8px; margin-top:auto; padding-top:8px; }
+  .new { font-size:0.68rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; background:#fff; color:#000; padding:2px 7px; border-radius:4px; align-self:flex-start; }
+  .thumb.light .new { background:#000; color:#fff; }
+  .empty { padding:60px 0; text-align:center; color:var(--muted); }
 
-  .video { aspect-ratio: 16/9; background: var(--ink); border-radius: var(--radius); display:grid; place-items:center; color:#fff; text-align:center; position:relative; overflow:hidden; }
-  .video .play { width:84px; height:84px; border-radius:50%; border:2px solid #fff; display:grid; place-items:center; margin:0 auto 18px; }
-  .video .play::after { content:""; border-left:24px solid #fff; border-top:15px solid transparent; border-bottom:15px solid transparent; margin-left:6px; }
-  .video p { margin:0; font-weight:700; font-size:1.2rem; }
-  .video small { color:#aaa; font-style:italic; }
-  .story { display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px; margin-top: 28px; align-items:start; }
-  .facts { list-style:none; padding:0; margin:0; }
-  .facts li { border-bottom:1px solid var(--line); padding:12px 0; display:flex; justify-content:space-between; gap:16px; }
-  .facts li span:first-child { color: var(--muted); }
-  .facts li span:last-child { font-weight:700; text-align:right; }
+  /* Kit tray */
+  .tray { position:fixed; left:0; right:0; bottom:0; background:var(--ink); color:#fff; z-index:20; padding:14px 0; box-shadow:0 -8px 30px rgba(0,0,0,0.15); }
+  .tray .wrap { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .tray-label { font-weight:700; }
+  .tray-items { display:flex; gap:6px; flex-wrap:wrap; flex:1; min-width:200px; }
+  .tray-item { font-size:0.8rem; border:1px solid #444; border-radius:999px; padding:3px 6px 3px 11px; display:inline-flex; gap:6px; align-items:center; max-width:240px; }
+  .tray-item span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .tray-item button { background:none; border:none; color:#aaa; cursor:pointer; font-size:1rem; line-height:1; padding:0 4px; }
+  .tray input { padding:9px 14px; border-radius:999px; border:1px solid #555; background:#111; color:#fff; font-family:inherit; font-size:0.9rem; width:220px; }
 
-  .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:999px; font-weight:600; font-size:0.92rem; text-decoration:none; cursor:pointer; font-family:inherit; border:1.5px solid var(--ink); background:#fff; color:var(--ink); }
-  .btn:hover, .btn.primary { background: var(--ink); color:#fff; }
-  .btn.primary:hover { background:#333; }
-  .btns { display:flex; gap:10px; flex-wrap:wrap; }
+  /* Modal */
+  .modal { position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:30; display:flex; justify-content:flex-end; }
+  .panel { background:#fff; width:min(760px, 100%); height:100%; overflow-y:auto; padding:28px 32px 60px; }
+  .panel-top { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:18px; position:sticky; top:-28px; background:#fff; padding:14px 0; z-index:2; }
 
-  .quotes { display:grid; gap:14px; margin-top:28px; }
-  .quote { border:1px solid var(--line); border-radius: var(--radius); padding:22px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
-  .quote p { margin:0; font-size:1.15rem; font-weight:700; letter-spacing:-0.01em; }
-  .quote small { display:block; color:var(--muted); font-style:italic; font-weight:400; font-size:0.9rem; margin-top:4px; }
+  /* Share block (used in panel and kit) */
+  .share h2 { font-size:clamp(1.5rem, 3vw, 2rem); }
+  .share-section { margin-top:28px; }
+  .share-section > .eyebrow { margin-bottom:12px; }
+  .summary { font-size:1.05rem; max-width:680px; }
+  .quote { border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:10px; }
+  .quote p { margin:0; font-weight:700; letter-spacing:-0.01em; }
+  .quote small { display:block; color:var(--muted); font-style:italic; font-weight:400; font-size:0.82rem; margin-top:3px; }
+  .gfx { display:grid; grid-template-columns:repeat(auto-fill, minmax(170px, 1fr)); gap:12px; }
+  .gfx figure { margin:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .gfx img, .gfx canvas { width:100%; display:block; aspect-ratio:1; }
+  .gfx figcaption { padding:10px 12px; display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:0.82rem; font-weight:600; }
+  .tabs { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+  .tab { padding:7px 14px; border-radius:999px; border:1.5px solid var(--ink); background:#fff; font-weight:600; font-size:0.85rem; cursor:pointer; }
+  .tab[aria-selected="true"] { background:var(--ink); color:#fff; }
+  .caption { border:2px solid var(--ink); border-radius:var(--radius); padding:20px 22px; }
+  .caption pre { font-family:inherit; white-space:pre-wrap; margin:0 0 16px; font-size:0.98rem; }
+  .gap { background:var(--ink); color:#fff; padding:1px 6px; border-radius:4px; font-weight:600; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .yours { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:10px; }
+  .yours div { background:var(--soft); border-radius:12px; padding:14px 16px; font-weight:600; font-size:0.92rem; }
+  .yours b { display:block; font-size:1.3rem; font-weight:800; margin-bottom:4px; }
 
-  .assets { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:18px; margin-top:28px; }
-  .asset { border:1px solid var(--line); border-radius: var(--radius); overflow:hidden; }
-  .asset img { width:100%; display:block; aspect-ratio:1; object-fit:cover; border-bottom:1px solid var(--line); }
-  .asset div { padding:14px 16px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
-  .asset span { font-size:0.9rem; font-weight:600; }
+  /* Kit view */
+  .kit-hero { background:var(--ink); color:#fff; padding:28px 0 56px; }
+  .kit-hero h1 { color:#fff; }
+  .kit-hero p { color:#cfcfcf; max-width:680px; font-size:1.1rem; margin:0 0 22px; }
+  .role-switch { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:26px; color:#cfcfcf; font-size:0.92rem; }
+  .role-switch select { background:#111; color:#fff; border-color:#555; }
+  .kit-steps { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:28px; }
+  .kit-steps div { border:1px solid #333; border-radius:12px; padding:14px 16px; color:#cfcfcf; font-size:0.9rem; }
+  .kit-steps b { display:block; color:#fff; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:2px; }
+  .kit-toc { display:flex; gap:8px; flex-wrap:wrap; padding:20px 0; border-bottom:1px solid var(--line); }
+  .kit-piece { padding:56px 0; border-bottom:1px solid var(--line); }
+  .kit-piece-head { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:12px; }
+  .rules { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .rules div { border:1px solid var(--line); border-radius:var(--radius); padding:18px 22px; }
+  .rules ul { margin:0; padding-left:18px; color:var(--muted); }
+  .rules li { margin-bottom:4px; }
 
-  .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-top:28px; }
-  .tab { padding:9px 16px; border-radius:999px; border:1.5px solid var(--ink); background:#fff; font-weight:600; font-family:inherit; font-size:0.92rem; cursor:pointer; }
-  .tab[aria-selected="true"] { background: var(--ink); color:#fff; }
-  .caption { margin-top:18px; border:2px solid var(--ink); border-radius: var(--radius); padding:26px 28px; }
-  .caption .who { font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
-  .caption pre { font-family:inherit; white-space:pre-wrap; margin:0 0 20px; font-size:1rem; }
-  .gap { background: var(--ink); color:#fff; padding:1px 6px; border-radius:4px; font-weight:600; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
-  .why { font-size:0.92rem; color:var(--muted); margin: -6px 0 18px; font-style: italic; }
-
-  .yours { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; margin-top:28px; }
-  .yours div { background: var(--soft); border-radius: var(--radius); padding:22px 24px; }
-  .yours b { display:block; font-size:2rem; font-weight:800; line-height:1; margin-bottom:10px; }
-  .yours p { margin:0; font-weight:600; }
-
-  .rules { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:28px; }
-  .rules div { border:1px solid var(--line); border-radius: var(--radius); padding:22px 24px; }
-  .rules ul { margin:0; padding-left:20px; color: var(--muted); }
-  .rules li { margin-bottom:6px; }
-
-  .kit-title { font-size: clamp(2.1rem, 5.4vw, 3.4rem); letter-spacing:-0.04em; }
-  .intro { border-top:none; padding: 56px 0 72px; background: var(--ink); color:#fff; }
-  .intro .eyebrow { color:#aaa; }
-  .intro h1 { color:#fff; }
-  .intro-lede { font-size:1.2rem; color:#cfcfcf; max-width:680px; margin: 0 0 14px; }
-  .intro-lede strong { color:#fff; }
-  .intro-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:14px; margin-top:32px; }
-  .intro-grid div { border:1px solid #333; border-radius: var(--radius); padding:18px 20px; color:#cfcfcf; }
-  .intro-grid b { display:block; color:#fff; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px; }
-  .see { margin: 36px 0 0; font-weight:700; color:#fff; }
-  footer { background: var(--ink); color:#8a8a8a; padding:40px 0; font-size:0.88rem; }
+  footer { background:var(--ink); color:#8a8a8a; padding:36px 0 110px; font-size:0.86rem; }
   footer a { color:#fff; }
 
-  .toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:var(--ink); color:#fff; padding:12px 20px; border-radius:999px; font-weight:600; font-size:0.92rem; opacity:0; transition: all .2s; pointer-events:none; }
+  .toast { position:fixed; left:50%; bottom:96px; transform:translateX(-50%) translateY(16px); background:var(--ink); color:#fff; padding:11px 20px; border-radius:999px; font-weight:600; font-size:0.9rem; opacity:0; transition:all .2s; pointer-events:none; z-index:50; border:1px solid #444; }
   .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
-  @media (max-width: 760px) { .story, .rules { grid-template-columns: 1fr; } .quote { flex-direction:column; align-items:flex-start; } }
+  @media (max-width:720px) {
+    .panel { padding:20px 18px 60px; }
+    .rules { grid-template-columns:1fr; }
+    .quote { flex-direction:column; align-items:flex-start; }
+    .tray input { width:100%; }
+  }
 </style>
 </head>
 <body>
 
-<div class="banner">Amplify Share Kit <em>· sample kit · Ledgerly and Rosa's Bakery are fictional</em></div>
+<div class="banner"><b>Amplify Share Kit</b> · sample library · Ledgerly and everything in it are fictional</div>
 
-<nav aria-label="Main">
-  <div class="wrap">
-    <a class="brand" href="#top">Amplify <em style="font-weight:400">Share Kit</em></a>
-    <a class="back" href="https://github.com/maggiecurrie/amplify">View on GitHub ↗</a>
-  </div>
-</nav>
-
-<section class="intro" id="top">
-  <div class="wrap">
-    <div class="eyebrow">Amplify Share Kit</div>
-    <h1>Your content deserves <em>more than one post.</em></h1>
-    <p class="intro-lede">You make great content. It goes up on the company page, gets a day of attention, and disappears. But it could live on every salesperson's, leader's, and teammate's LinkedIn too.</p>
-    <p class="intro-lede"><strong>A share kit gives it longer legs:</strong> one page with everything your team needs to share it in about five minutes, in their own voice.</p>
-    <div class="intro-grid">
-      <div><b>The problem</b>Content gets posted once, on one channel.</div>
-      <div><b>The fix</b>A ready-to-go kit the whole team can share.</div>
-      <div><b>The human part</b>Every caption leaves room for their own story.</div>
+<!-- ============ LIBRARY VIEW ============ -->
+<main id="library-view">
+  <header class="hero">
+    <div class="wrap">
+      <div class="topbar">
+        <a class="brand" href="#">Amplify <em>Share Kit</em></a>
+        <a class="gh" href="https://github.com/maggiecurrie/amplify">View on GitHub ↗</a>
+      </div>
+      <div class="eyebrow">For social media teams who publish every week</div>
+      <h1>Your content deserves <em>more than one post.</em></h1>
+      <p>Everything your team makes goes into one living library. Search it, pick what fits, and <strong>turn it into a share kit</strong> your whole company can post on LinkedIn, each in their own voice.</p>
+      <div class="flow">
+        <div><b>1 · Search</b>Every video, blog, report, and post, in one place.</div>
+        <div><b>2 · Pick</b>Add the pieces you want to push this week to a kit.</div>
+        <div><b>3 · Send the kit</b>One link with quotes, graphics, and captions by role.</div>
+        <div><b>4 · Make it theirs</b>Every caption leaves room for a real, personal story.</div>
+      </div>
     </div>
-    <p class="see">Here's a sample kit ↓</p>
-  </div>
-</section>
+  </header>
 
-<header id="kit">
-  <div class="wrap">
-    <div class="eyebrow">Share kit · Customer story</div>
-    <h2 class="kit-title">Rosa's Bakery: <em>from chasing invoices to Sunday dinners.</em></h2>
-    <p class="muted" style="max-width:640px;font-size:1.15rem">Everything you need to share this story on LinkedIn, in your own voice, in about five minutes.</p>
-    <div class="meta">
-      <span class="pill solid">Ready to share</span>
-      <span class="pill">Best for: Sales · Leadership · Customer Success</span>
-      <span class="pill">Share by: Friday</span>
-    </div>
-    <div class="steps-mini">
-      <div><b>1 · Watch</b>Get the story in 90 seconds.</div>
-      <div><b>2 · Pick</b>Grab a quote, a graphic, and a caption for your role.</div>
-      <div><b>3 · Make it yours</b>Add one real sentence from your experience.</div>
-      <div><b>4 · Post</b>Copy, open LinkedIn, paste, share.</div>
-    </div>
-  </div>
-</header>
-
-<section id="story">
-  <div class="wrap">
-    <div class="eyebrow">1 · The story</div>
-    <h2>Watch first. <em>It's 90 seconds.</em></h2>
-    <div class="story">
-      <div class="video" role="img" aria-label="Video placeholder">
+  <section class="library">
+    <div class="wrap">
+      <div class="lib-head">
         <div>
-          <div class="play"></div>
-          <p>Rosa's Bakery × Ledgerly</p>
-          <small>Video placeholder: embed the YouTube or Vimeo link here</small>
+          <div class="eyebrow">The library</div>
+          <h2>Everything we've made. <em>Ready to go further.</em></h2>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Search by topic, customer, quote… e.g. &quot;late payments&quot;" aria-label="Search the library">
+        <div class="filters">
+          <div class="chips" id="type-chips" role="group" aria-label="Filter by type"></div>
+          <select id="theme-filter" aria-label="Filter by theme"><option value="">All themes</option></select>
+          <select id="role-filter" aria-label="Sharing as">
+            <option value="">Captions for: any role</option>
+            <option>Sales</option><option>Leadership</option><option>Customer Success</option><option>Anyone</option>
+          </select>
+          <select id="sort" aria-label="Sort">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+          </select>
         </div>
       </div>
-      <div>
-        <p style="margin-top:0">Rosa Delgado runs a 12-person bakery that supplies cafés across the city. Her wholesale customers paid on average <strong>64 days late</strong>, so she spent Sunday nights chasing invoices instead of being with her family.</p>
-        <p>With Ledgerly's automatic reminders and early payment options, she now gets paid in <strong>9 days</strong>, and has her Sundays back.</p>
-        <ul class="facts">
-          <li><span>Customer</span><span>Rosa Delgado, Owner</span></li>
-          <li><span>Business</span><span>Rosa's Bakery · 12 people</span></li>
-          <li><span>Before</span><span>64 days to get paid</span></li>
-          <li><span>After</span><span>9 days to get paid</span></li>
-        </ul>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>Nothing matches that yet. Try another word, or clear the filters.</div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ KIT VIEW ============ -->
+<main id="kit-view" hidden>
+  <header class="kit-hero">
+    <div class="wrap">
+      <div class="topbar">
+        <a class="brand" href="#">Amplify <em>Share Kit</em></a>
+        <a class="gh" href="#" id="back-to-library">← Back to the library</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="quotes">
-  <div class="wrap">
-    <div class="eyebrow">2 · Pull quotes</div>
-    <h2>Rosa's words. <em>Use them exactly.</em></h2>
-    <div class="quotes">
-      <div class="quote"><p>"I used to spend Sunday nights chasing invoices. Now I spend them with my kids."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;I used to spend Sunday nights chasing invoices. Now I spend them with my kids.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
-      <div class="quote"><p>"I opened a bakery to bake. Not to be a debt collector."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;I opened a bakery to bake. Not to be a debt collector.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
-      <div class="quote"><p>"The first month the money came in on time, I cried in the walk-in fridge."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;The first month the money came in on time, I cried in the walk-in fridge.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
-    </div>
-  </div>
-</section>
-
-<section id="assets">
-  <div class="wrap">
-    <div class="eyebrow">2 · Graphics</div>
-    <h2>Ready-made images. <em>Sized for LinkedIn.</em></h2>
-    <div class="assets">
-      <div class="asset"><img src="assets/quote-card-sunday-nights.png" alt="Quote card: I used to spend Sunday nights chasing invoices. Now I spend them with my kids."><div><span>Sunday nights</span><a class="btn" href="assets/quote-card-sunday-nights.png" download>Download</a></div></div>
-      <div class="asset"><img src="assets/quote-card-9-days.png" alt="Stat card: From 64 days to 9 days."><div><span>64 → 9 days</span><a class="btn" href="assets/quote-card-9-days.png" download>Download</a></div></div>
-      <div class="asset"><img src="assets/quote-card-bake.png" alt="Quote card: I opened a bakery to bake. Not to be a debt collector."><div><span>Bake, not chase</span><a class="btn" href="assets/quote-card-bake.png" download>Download</a></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="captions">
-  <div class="wrap">
-    <div class="eyebrow">2 · Captions</div>
-    <h2>Pick your role. <em>Then make it yours.</em></h2>
-    <p class="muted" style="max-width:640px">Each caption is a starting point, not a script. The highlighted part is where <strong>your</strong> story goes. Posts with a real personal detail get far more conversation than copy-and-paste.</p>
-
-    <div class="tabs" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" data-role="sales">Sales</button>
-      <button class="tab" role="tab" aria-selected="false" data-role="leader">Leadership</button>
-      <button class="tab" role="tab" aria-selected="false" data-role="cs">Customer Success</button>
-      <button class="tab" role="tab" aria-selected="false" data-role="anyone">Anyone at Ledgerly</button>
-    </div>
-
-    <div class="caption" role="tabpanel">
-      <div class="who" id="cap-who"></div>
-      <p class="why" id="cap-why"></p>
-      <pre id="cap-text"></pre>
+      <div class="eyebrow" style="color:#999">Share kit</div>
+      <h1 id="kit-title"></h1>
+      <p id="kit-sub"></p>
       <div class="btns">
-        <button class="btn primary" id="copy-caption">Copy caption</button>
-        <a class="btn" href="https://www.linkedin.com/feed/?shareActive=true" target="_blank" rel="noopener">Open LinkedIn ↗</a>
+        <button class="btn light" id="copy-kit-link">Copy kit link to send the team</button>
+        <button class="btn light" id="edit-kit">Edit this kit</button>
+      </div>
+      <div class="kit-steps">
+        <div><b>1 · Pick a piece</b>Choose what you'd like to share below.</div>
+        <div><b>2 · Grab what you need</b>A quote, a graphic, and your caption.</div>
+        <div><b>3 · Make it yours</b>Swap the highlighted gap for one real sentence.</div>
+        <div><b>4 · Post</b>Copy, open LinkedIn, paste, share.</div>
+      </div>
+      <div class="role-switch">
+        I'm sharing as
+        <select id="kit-role" aria-label="Your role">
+          <option>Sales</option><option>Leadership</option><option>Customer Success</option><option selected>Anyone</option>
+        </select>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="yours">
+  </header>
   <div class="wrap">
-    <div class="eyebrow">3 · Make it yours</div>
-    <h2>One real sentence <em>changes everything.</em></h2>
-    <p class="muted" style="max-width:640px">Answer any one of these and swap it in for the highlighted part of your caption.</p>
-    <div class="yours">
-      <div><b>01</b><p>Which customer of yours does Rosa remind you of? What's one thing they told you?</p></div>
-      <div><b>02</b><p>When did you last see a business owner stressed about getting paid? What happened?</p></div>
-      <div><b>03</b><p>Why does this story matter to <em>you</em>, not just to the company?</p></div>
-    </div>
+    <nav class="kit-toc" id="kit-toc" aria-label="Pieces in this kit"></nav>
+    <div id="kit-pieces"></div>
+    <section class="kit-piece">
+      <div class="eyebrow">Before you post</div>
+      <h2>A few simple rules.</h2>
+      <div class="rules">
+        <div><h3>Do</h3><ul>
+          <li>Add your own sentence, even a short one</li>
+          <li>Tag the company, and customers if they've agreed</li>
+          <li>Reply to comments within a day</li>
+          <li>Spread posts across the week, so we don't all post at once</li>
+        </ul></div>
+        <div><h3>Don't</h3><ul>
+          <li>Post the caption word for word</li>
+          <li>Change anyone's quotes or numbers</li>
+          <li>Promise results to other customers</li>
+          <li>Share anything that isn't in the kit</li>
+        </ul></div>
+      </div>
+    </section>
   </div>
-</section>
+</main>
 
-<section id="rules">
+<!-- ============ KIT TRAY ============ -->
+<div class="tray" id="tray" hidden>
   <div class="wrap">
-    <div class="eyebrow">4 · Before you post</div>
-    <h2>A few simple rules.</h2>
-    <div class="rules">
-      <div><h3>Do</h3><ul>
-        <li>Add your own sentence, even a short one</li>
-        <li>Tag Ledgerly, and Rosa's Bakery if they've agreed</li>
-        <li>Reply to comments within a day</li>
-        <li>Post any day before Friday, so we don't all post at once</li>
-      </ul></div>
-      <div><h3>Don't</h3><ul>
-        <li>Post the caption word for word</li>
-        <li>Change Rosa's quotes or numbers</li>
-        <li>Promise results to other customers</li>
-        <li>Share anything not in this kit about Rosa's business</li>
-      </ul></div>
-    </div>
+    <span class="tray-label" id="tray-label"></span>
+    <div class="tray-items" id="tray-items"></div>
+    <input id="kit-name" type="text" placeholder="Name this kit, e.g. This week's picks" aria-label="Kit name">
+    <button class="btn light" id="build-kit">Build share kit →</button>
   </div>
-</section>
+</div>
+
+<!-- ============ PREVIEW PANEL ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+    <div class="panel-top">
+      <button class="btn small" id="close-panel">✕ Close</button>
+      <button class="btn small primary" id="panel-add"></button>
+    </div>
+    <div id="panel-body"></div>
+  </div>
+</div>
 
 <footer>
   <div class="wrap">
-    <strong style="color:#fff">Amplify Share Kit</strong>: give great content longer legs, with the human story left in. <a href="https://github.com/maggiecurrie/amplify">See how it's built on GitHub</a>. Built by <a href="https://www.linkedin.com/in/mary-anne-maggie-currie/">Maggie Currie</a>. Ledgerly, Rosa's Bakery, and all people and figures here are fictional.
+    <strong style="color:#fff">Amplify Share Kit</strong>: give great content longer legs, with the human story left in.
+    Adding new content is one entry in <a href="https://github.com/maggiecurrie/amplify/blob/main/content.json">content.json</a> (<a href="https://github.com/maggiecurrie/amplify/blob/main/ADDING-CONTENT.md">here's how</a>).
+    Built by <a href="https://www.linkedin.com/in/mary-anne-maggie-currie/">Maggie Currie</a>. Ledgerly, its customers, people, quotes and figures are fictional.
   </div>
 </footer>
 
-<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-const captions = {
-  sales: {
-    who: "For Sales",
-    why: "Angle: you hear this problem from prospects every week.",
-    text: `"I opened a bakery to bake. Not to be a debt collector."
+const ROLES = ["Sales", "Leadership", "Customer Success", "Anyone"];
+const DARK_TYPES = ["Customer story", "Report", "Product update", "Podcast"];
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" });
 
-That's Rosa Delgado. She runs a 12-person bakery, and until this year she spent her Sunday nights chasing invoices.
+let DATA = [], COMPANY = "", byId = {};
+let state = { q:"", type:"All", theme:"", role:"", sort:"new" };
+let kit = [];
+let newestDate = 0;
 
-[YOUR STORY: one sentence about a customer or prospect you've talked to who felt the same way.]
+// ---------- storage (light convenience only) ----------
+function saveKit(){ try { localStorage.setItem("amplify-kit", JSON.stringify({ items:kit, name:$("#kit-name").value })); } catch(e){} }
+function loadKit(){ try { const k = JSON.parse(localStorage.getItem("amplify-kit") || "null"); if (k) { kit = (k.items||[]).filter(id => byId[id]); $("#kit-name").value = k.name || ""; } } catch(e){} }
 
-Her customers used to take 64 days to pay. Now it's 9.
-
-If you run a small business and late payments are eating your weekends, I'd love to hear how you handle it.`
-  },
-  leader: {
-    who: "For Leadership",
-    why: "Angle: why this story is the reason the company exists.",
-    text: `This is why we do what we do.
-
-Rosa Delgado runs a 12-person bakery. Her wholesale customers took 64 days, on average, to pay her. So every Sunday night, instead of being with her kids, she was chasing invoices.
-
-Today she gets paid in 9 days. And she has her Sundays back.
-
-[YOUR STORY: one sentence on what this story means to you personally, or why you started or joined Ledgerly.]
-
-Small businesses don't need more software. They need their time back.`
-  },
-  cs: {
-    who: "For Customer Success",
-    why: "Angle: you see the before and after up close.",
-    text: `"The first month the money came in on time, I cried in the walk-in fridge."
-
-Rosa Delgado, owner of Rosa's Bakery, told us that, and honestly it's my favourite part of this job.
-
-[YOUR STORY: one sentence about a moment with a customer you've supported that felt like this.]
-
-64 days to get paid → 9 days. But the number that matters more: Sunday nights back with her family.
-
-Proud of this one.`
-  },
-  anyone: {
-    who: "For anyone at Ledgerly",
-    why: "Angle: simple and proud. Great if you've never posted about work before.",
-    text: `Meet Rosa. 🥐
-
-She runs a bakery, and she used to spend her Sunday nights chasing late invoices.
-
-Now she gets paid in 9 days instead of 64, and spends those Sundays with her kids.
-
-[YOUR STORY: one sentence on why this made you proud to work here.]
-
-Stories like this are why I love what we're building at Ledgerly.`
-  }
-};
-
-const who = document.getElementById("cap-who");
-const why = document.getElementById("cap-why");
-const text = document.getElementById("cap-text");
-const toast = document.getElementById("toast");
-let current = "sales";
-
-function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-function render(role){
-  current = role;
-  const c = captions[role];
-  who.textContent = c.who;
-  why.textContent = c.why;
-  text.innerHTML = esc(c.text).replace(/\[YOUR STORY:[^\]]*\]/, m => `<span class="gap">${m}</span>`);
-  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.role === role));
-}
-document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => render(t.dataset.role)));
-
-function showToast(msg){
-  toast.textContent = msg;
-  toast.classList.add("show");
-  clearTimeout(showToast.t);
-  showToast.t = setTimeout(() => toast.classList.remove("show"), 2200);
-}
-async function copy(str, msg){
-  try { await navigator.clipboard.writeText(str); showToast(msg); }
-  catch (e) {
-    const ta = document.createElement("textarea"); ta.value = str; document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); showToast(msg); } catch (_) { showToast("Select the text to copy it"); }
+// ---------- helpers ----------
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toast.t); toast.t=setTimeout(()=>t.classList.remove("show"),2400); }
+async function copy(text, msg){
+  try { await navigator.clipboard.writeText(text); toast(msg); }
+  catch(e){
+    const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); toast(msg); } catch(_) { toast("Select the text to copy it"); }
     ta.remove();
   }
 }
-document.getElementById("copy-caption").addEventListener("click", () =>
-  copy(captions[current].text, "Copied. Now replace [YOUR STORY] with yours"));
-document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copy(b.dataset.copy, "Quote copied")));
+function isNew(item){ return (newestDate - new Date(item.date).getTime()) <= 14*864e5; }
+function rolesFor(item){ return ROLES.filter(r => item.captions[r]); }
+function bestRole(item, wanted){ if (wanted && item.captions[wanted]) return wanted; return item.captions.Anyone ? "Anyone" : rolesFor(item)[0]; }
+function highlight(text){ return esc(text).replace(/\[YOUR STORY:[^\]]*\]/g, m => `<span class="gap">${m}</span>`); }
 
-render("sales");
+// ---------- library ----------
+function matches(item){
+  if (state.type !== "All" && item.type !== state.type) return false;
+  if (state.theme && !item.themes.includes(state.theme)) return false;
+  if (state.role && !item.captions[state.role]) return false;
+  if (state.q) {
+    const hay = [item.title, item.type, item.summary, item.headline, item.quoteBy, ...item.themes, ...item.quotes].join(" ").toLowerCase();
+    return state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => hay.includes(w));
+  }
+  return true;
+}
+function renderLibrary(){
+  let list = DATA.filter(matches);
+  list.sort((a,b) => state.sort === "new" ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date));
+  $("#count").textContent = `Showing ${list.length} of ${DATA.length} pieces`;
+  $("#empty").hidden = list.length > 0;
+  $("#grid").innerHTML = list.map(item => {
+    const inKit = kit.includes(item.id);
+    return `<article class="card">
+      <button class="thumb ${DARK_TYPES.includes(item.type) ? "dark" : "light"}" data-preview="${item.id}" aria-label="Preview ${esc(item.title)}">
+        <small>${esc(item.type)}</small>
+        ${isNew(item) ? '<span class="new">New</span>' : ""}
+        <strong>${esc(item.headline)}</strong>
+      </button>
+      <div class="card-body">
+        <h3>${esc(item.title)}</h3>
+        <div class="card-meta">${esc(item.format)} · ${fmtDate(item.date)}</div>
+        <div class="tags">${item.themes.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+        <div class="card-actions">
+          <button class="btn small" data-preview="${item.id}">Preview</button>
+          <button class="btn small ${inKit ? "added" : ""}" data-toggle="${item.id}">${inKit ? "✓ In kit" : "+ Add to kit"}</button>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+function renderTray(){
+  $("#tray").hidden = kit.length === 0;
+  $("#tray-label").textContent = `Your kit · ${kit.length} piece${kit.length === 1 ? "" : "s"}`;
+  $("#tray-items").innerHTML = kit.map(id => `<span class="tray-item"><span>${esc(byId[id].title)}</span><button data-remove="${id}" aria-label="Remove">×</button></span>`).join("");
+}
+function toggleKit(id){
+  kit = kit.includes(id) ? kit.filter(x => x !== id) : [...kit, id];
+  saveKit(); renderLibrary(); renderTray();
+  if (!$("#modal").hidden) setPanelButton(id);
+  toast(kit.includes(id) ? "Added to your kit" : "Removed from your kit");
+}
+
+// ---------- share block (shared by preview and kit) ----------
+function shareBlock(item, role, prefix){
+  const r = bestRole(item, role);
+  const gfx = item.graphics.length
+    ? item.graphics.map(g => `<figure><img src="${esc(g.file)}" alt="${esc(g.label)}" loading="lazy"><figcaption>${esc(g.label)}<a class="btn small" href="${esc(g.file)}" download>Download</a></figcaption></figure>`).join("")
+    : item.quotes.slice(0,2).map((q,i) => `<figure><canvas width="1080" height="1080" data-card="${item.id}" data-q="${i}" data-dark="${i % 2 === 0}"></canvas><figcaption>Quote card ${i+1}<button class="btn small" data-dl="${item.id}" data-q="${i}" data-dark="${i % 2 === 0}">Download</button></figcaption></figure>`).join("");
+  return `<div class="share">
+    <div class="tags" style="margin-bottom:10px"><span class="pill solid">${esc(item.type)}</span><span class="pill">${esc(item.format)}</span><span class="pill">${fmtDate(item.date)}</span></div>
+    <h2 id="${prefix}-title">${esc(item.title)}</h2>
+    <p class="summary">${esc(item.summary)}</p>
+    ${item.link ? `<p><a class="btn small" href="${esc(item.link)}" target="_blank" rel="noopener">Open the original ↗</a></p>` : `<p class="muted" style="font-size:0.85rem;font-style:italic">Link to the original goes here.</p>`}
+    <div class="share-section"><div class="eyebrow">Pull quotes</div>
+      ${item.quotes.map(q => `<div class="quote"><p>"${esc(q)}"<small>${esc(item.quoteBy)}</small></p><button class="btn small" data-copy="${esc(`"${q}" (${item.quoteBy})`)}">Copy</button></div>`).join("")}
+    </div>
+    <div class="share-section"><div class="eyebrow">Graphics · sized for LinkedIn</div><div class="gfx">${gfx}</div></div>
+    <div class="share-section"><div class="eyebrow">Caption for your role</div>
+      <div class="tabs" role="tablist">${rolesFor(item).map(x => `<button class="tab" role="tab" aria-selected="${x === r}" data-tab="${item.id}" data-role="${x}" data-prefix="${prefix}">${x}</button>`).join("")}</div>
+      <div class="caption"><pre id="${prefix}-cap-${item.id}">${highlight(item.captions[r])}</pre>
+        <div class="btns"><button class="btn primary" data-copycap="${item.id}" data-prefix="${prefix}" data-role="${r}">Copy caption</button>
+        <a class="btn" href="https://www.linkedin.com/feed/?shareActive=true" target="_blank" rel="noopener">Open LinkedIn ↗</a></div>
+      </div>
+    </div>
+    <div class="share-section"><div class="eyebrow">Make it yours · answer one, swap it into the highlighted gap</div>
+      <div class="yours">${item.makeItYours.map((q,i) => `<div><b>0${i+1}</b>${esc(q)}</div>`).join("")}</div>
+    </div>
+  </div>`;
+}
+
+// Draw quote cards for pieces without ready-made graphics
+function wrapLines(ctx, text, max){
+  const words = text.split(" "); const lines = []; let line = "";
+  for (const w of words){ const t = line ? line + " " + w : w; if (ctx.measureText(t).width > max && line){ lines.push(line); line = w; } else line = t; }
+  if (line) lines.push(line); return lines;
+}
+function drawCard(canvas, item, qi, dark){
+  const ctx = canvas.getContext("2d"); const bg = dark ? "#000" : "#fff", fg = dark ? "#fff" : "#000", sub = dark ? "#aaa" : "#666";
+  ctx.fillStyle = bg; ctx.fillRect(0,0,1080,1080);
+  ctx.strokeStyle = dark ? "rgba(255,255,255,.15)" : "rgba(0,0,0,.12)"; ctx.lineWidth = 2; ctx.strokeRect(40,40,1000,1000);
+  ctx.fillStyle = sub; ctx.font = "700 28px Inter, Helvetica, Arial, sans-serif"; ctx.fillText(item.type.toUpperCase(), 96, 150);
+  const q = `“${item.quotes[qi]}”`; let size = 76, lines;
+  do { ctx.font = `800 ${size}px Inter, Helvetica, Arial, sans-serif`; lines = wrapLines(ctx, q, 888); size -= 4; } while (lines.length * size * 1.15 > 600 && size > 40);
+  size += 4; const lh = size * 1.15; let y = 540 - (lines.length * lh) / 2 + size * 0.8 - 30;
+  ctx.fillStyle = fg; lines.forEach(l => { ctx.fillText(l, 96, y); y += lh; });
+  ctx.fillStyle = sub; ctx.font = "italic 400 28px Inter, Helvetica, Arial, sans-serif";
+  const attr = wrapLines(ctx, item.quoteBy, 640); attr.slice(0,2).forEach((l,i) => ctx.fillText(l, 96, 920 + i * 36 - (attr.length > 1 ? 36 : 0)));
+  ctx.fillStyle = fg; ctx.font = "800 30px Inter, Helvetica, Arial, sans-serif"; ctx.textAlign = "right"; ctx.fillText(COMPANY, 984, 920); ctx.textAlign = "left";
+}
+function drawAllCards(root){ root.querySelectorAll("canvas[data-card]").forEach(c => drawCard(c, byId[c.dataset.card], +c.dataset.q, c.dataset.dark === "true")); }
+
+// ---------- preview panel ----------
+function setPanelButton(id){ const b = $("#panel-add"); const inKit = kit.includes(id); b.textContent = inKit ? "✓ In your kit" : "+ Add to kit"; b.dataset.toggle = id; }
+function openPanel(id){
+  const item = byId[id]; if (!item) return;
+  $("#panel-body").innerHTML = shareBlock(item, state.role, "panel");
+  setPanelButton(id); $("#modal").hidden = false; document.body.style.overflow = "hidden";
+  drawAllCards($("#panel-body")); $("#close-panel").focus();
+}
+function closePanel(){ $("#modal").hidden = true; document.body.style.overflow = ""; }
+
+// ---------- kit view ----------
+function kitLink(ids, name){ const p = new URLSearchParams({ kit: ids.join(","), name: name || "" }); return location.href.split("#")[0] + "#" + p.toString(); }
+function renderKit(ids, name){
+  const items = ids.map(id => byId[id]).filter(Boolean);
+  const role = $("#kit-role").value;
+  $("#kit-title").innerHTML = name ? `${esc(name)}` : `This week's <em>share kit</em>`;
+  $("#kit-sub").textContent = `${items.length} piece${items.length === 1 ? "" : "s"} ready to share. Pick one, grab what you need, and make it yours. It takes about five minutes.`;
+  $("#kit-toc").innerHTML = items.map((it,i) => `<a class="btn small" href="#" data-jump="piece-${it.id}">${i+1}. ${esc(it.title.length > 44 ? it.title.slice(0,42) + "…" : it.title)}</a>`).join("");
+  $("#kit-pieces").innerHTML = items.map(it => `<section class="kit-piece" id="piece-${it.id}">${shareBlock(it, role, "kit")}</section>`).join("");
+  drawAllCards($("#kit-pieces"));
+  document.title = `${name || "Share kit"} · Amplify Share Kit`;
+}
+function route(){
+  const params = new URLSearchParams(location.hash.slice(1));
+  const ids = (params.get("kit") || "").split(",").filter(id => byId[id]);
+  const onKit = ids.length > 0;
+  $("#library-view").hidden = onKit; $("#kit-view").hidden = !onKit; $("#tray").hidden = onKit || kit.length === 0;
+  if (onKit) { renderKit(ids, params.get("name")); window.scrollTo(0,0); }
+  else { document.title = "Amplify Share Kit · Give your content longer legs"; renderTray(); }
+}
+
+// ---------- events ----------
+document.addEventListener("click", e => {
+  const t = e.target.closest("button, a"); if (!t) return;
+  const d = t.dataset;
+  if (d.preview) { openPanel(d.preview); }
+  else if (d.toggle) { toggleKit(d.toggle); }
+  else if (d.remove) { toggleKit(d.remove); }
+  else if (d.copy) { copy(d.copy, "Quote copied"); }
+  else if (d.tab) {
+    const item = byId[d.tab];
+    t.parentElement.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b === t));
+    document.getElementById(`${d.prefix}-cap-${d.tab}`).innerHTML = highlight(item.captions[d.role]);
+    t.closest(".share").querySelector(`[data-copycap="${d.tab}"]`).dataset.role = d.role;
+  }
+  else if (d.copycap) { copy(byId[d.copycap].captions[d.role], "Copied. Now swap [YOUR STORY] for yours"); }
+  else if (d.dl) {
+    const c = document.createElement("canvas"); c.width = c.height = 1080; drawCard(c, byId[d.dl], +d.q, d.dark === "true");
+    const a = document.createElement("a"); a.download = `${d.dl}-quote-${+d.q + 1}.png`; a.href = c.toDataURL("image/png"); a.click();
+  }
+  else if (d.jump) { e.preventDefault(); document.getElementById(d.jump).scrollIntoView({ behavior:"smooth" }); }
+});
+$("#close-panel").addEventListener("click", closePanel);
+$("#modal").addEventListener("click", e => { if (e.target.id === "modal") closePanel(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#modal").hidden) closePanel(); });
+$("#search").addEventListener("input", e => { state.q = e.target.value.trim(); renderLibrary(); });
+$("#theme-filter").addEventListener("change", e => { state.theme = e.target.value; renderLibrary(); });
+$("#role-filter").addEventListener("change", e => { state.role = e.target.value; renderLibrary(); });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; renderLibrary(); });
+$("#kit-name").addEventListener("input", saveKit);
+$("#build-kit").addEventListener("click", () => { location.hash = new URLSearchParams({ kit: kit.join(","), name: $("#kit-name").value.trim() }).toString(); });
+$("#copy-kit-link").addEventListener("click", () => { const p = new URLSearchParams(location.hash.slice(1)); copy(kitLink(p.get("kit").split(","), p.get("name")), "Kit link copied. Paste it to your team"); });
+$("#edit-kit").addEventListener("click", () => { const p = new URLSearchParams(location.hash.slice(1)); kit = p.get("kit").split(",").filter(id => byId[id]); $("#kit-name").value = p.get("name") || ""; saveKit(); location.hash = ""; renderLibrary(); });
+$("#back-to-library").addEventListener("click", e => { e.preventDefault(); location.hash = ""; });
+$("#kit-role").addEventListener("change", () => { const p = new URLSearchParams(location.hash.slice(1)); renderKit(p.get("kit").split(","), p.get("name")); });
+window.addEventListener("hashchange", route);
+
+// ---------- start ----------
+fetch("content.json").then(r => r.json()).then(json => {
+  COMPANY = json.company; DATA = json.items; DATA.forEach(i => byId[i.id] = i);
+  newestDate = Math.max(...DATA.map(i => new Date(i.date).getTime()));
+  const types = ["All", ...new Set(DATA.map(i => i.type))];
+  $("#type-chips").innerHTML = types.map(t => `<button class="chip" aria-pressed="${t === "All"}" data-type="${esc(t)}">${esc(t)}</button>`).join("");
+  $("#type-chips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; state.type = b.dataset.type; document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b)); renderLibrary(); });
+  [...new Set(DATA.flatMap(i => i.themes))].sort().forEach(t => $("#theme-filter").insertAdjacentHTML("beforeend", `<option>${esc(t)}</option>`));
+  loadKit(); renderLibrary(); route();
+  if (document.fonts) document.fonts.ready.then(() => { drawAllCards(document); });
+}).catch(() => { $("#grid").innerHTML = '<p class="empty">The library couldn\'t load. Refresh the page to try again.</p>'; });
 </script>
 </body>
 </html>

@@ -1,0 +1,336 @@
+{
+  "company": "Ledgerly",
+  "note": "Fictional sample library. Ledgerly, its customers, people, quotes and figures are all invented.",
+  "items": [
+    {
+      "id": "rosas-bakery",
+      "title": "Rosa's Bakery: from chasing invoices to Sunday dinners",
+      "type": "Customer story",
+      "format": "Video · 90 sec",
+      "date": "2026-11-18",
+      "themes": ["Late payments", "Small business life"],
+      "headline": "64 days → 9 days",
+      "summary": "Rosa Delgado runs a 12-person bakery supplying cafés across the city. Her wholesale customers paid on average 64 days late, so she spent Sunday nights chasing invoices. With Ledgerly she gets paid in 9 days, and has her Sundays back.",
+      "link": "",
+      "quotes": [
+        "I used to spend Sunday nights chasing invoices. Now I spend them with my kids.",
+        "I opened a bakery to bake. Not to be a debt collector.",
+        "The first month the money came in on time, I cried in the walk-in fridge."
+      ],
+      "quoteBy": "Rosa Delgado, Owner, Rosa's Bakery",
+      "graphics": [
+        {"file": "assets/quote-card-sunday-nights.png", "label": "Sunday nights"},
+        {"file": "assets/quote-card-9-days.png", "label": "64 → 9 days"},
+        {"file": "assets/quote-card-bake.png", "label": "Bake, not chase"}
+      ],
+      "captions": {
+        "Sales": "\"I opened a bakery to bake. Not to be a debt collector.\"\n\nThat's Rosa Delgado. She runs a 12-person bakery, and until this year she spent her Sunday nights chasing invoices.\n\n[YOUR STORY: one sentence about a customer or prospect you've talked to who felt the same way.]\n\nHer customers used to take 64 days to pay. Now it's 9.\n\nIf late payments are eating your weekends, I'd love to hear how you handle it.",
+        "Leadership": "This is why we do what we do.\n\nRosa Delgado runs a 12-person bakery. Her customers took 64 days, on average, to pay her. So every Sunday night, instead of being with her kids, she was chasing invoices.\n\nToday she gets paid in 9 days. And she has her Sundays back.\n\n[YOUR STORY: one sentence on what this means to you personally.]\n\nSmall businesses don't need more software. They need their time back.",
+        "Customer Success": "\"The first month the money came in on time, I cried in the walk-in fridge.\"\n\nRosa Delgado, owner of Rosa's Bakery, told us that, and it's my favourite part of this job.\n\n[YOUR STORY: one sentence about a moment with a customer you've supported that felt like this.]\n\n64 days to get paid → 9 days. Proud of this one.",
+        "Anyone": "Meet Rosa. 🥐\n\nShe runs a bakery, and she used to spend her Sunday nights chasing late invoices.\n\nNow she gets paid in 9 days instead of 64, and spends those Sundays with her kids.\n\n[YOUR STORY: one sentence on why this made you proud to work here.]"
+      },
+      "makeItYours": [
+        "Which customer of yours does Rosa remind you of?",
+        "When did you last see a business owner stressed about getting paid?",
+        "Why does this story matter to you, not just to the company?"
+      ]
+    },
+    {
+      "id": "late-payment-report-2026",
+      "title": "The Late Payment Report 2026",
+      "type": "Report",
+      "format": "PDF · 18 pages",
+      "date": "2026-11-12",
+      "themes": ["Late payments", "Industry data"],
+      "headline": "1 in 3 invoices paid late",
+      "summary": "Our yearly survey of 1,200 small businesses. One in three invoices is paid late, the average late invoice is 23 days overdue, and 41% of owners have skipped their own pay to cover the gap.",
+      "link": "",
+      "quotes": [
+        "41% of small business owners have skipped their own paycheque to cover a late payment.",
+        "The average late invoice arrives 23 days after it's due.",
+        "Owners who automate reminders get paid 2x faster."
+      ],
+      "quoteBy": "The Late Payment Report 2026, Ledgerly",
+      "graphics": [],
+      "captions": {
+        "Sales": "41% of small business owners have skipped their own pay to cover a late invoice.\n\nThat stat from our new Late Payment Report stopped me in my tracks.\n\n[YOUR STORY: one sentence about a business owner you've met who's been there.]\n\nThe good news: owners who automate their reminders get paid 2x faster. Full report in the comments.",
+        "Leadership": "We surveyed 1,200 small businesses this year. The number I can't stop thinking about: 41% have skipped their own pay to cover a late payment.\n\n[YOUR STORY: one sentence on why this number matters to you.]\n\nLate payments aren't an admin problem. They're a people problem. The full Late Payment Report is out today.",
+        "Anyone": "1 in 3 invoices is paid late. 📊\n\nOur new Late Payment Report is out, and it's eye-opening.\n\n[YOUR STORY: one sentence on the stat that surprised you most, and why.]"
+      },
+      "makeItYours": [
+        "Which stat surprised you most?",
+        "Have you, or someone you know, been paid late? What did it cost them?",
+        "What would you tell a business owner reading this?"
+      ]
+    },
+    {
+      "id": "webinar-cash-flow-story",
+      "title": "Webinar: Cash Flow Is a Story, Not a Spreadsheet",
+      "type": "Webinar",
+      "format": "Recording · 30 min",
+      "date": "2026-10-29",
+      "themes": ["Cash flow", "Small business life"],
+      "headline": "Cash flow is a story",
+      "summary": "Our CEO, CRO and Chief Risk Officer on why small business owners talk about cash flow in moments, not numbers, and what that means for the tools they need.",
+      "link": "",
+      "quotes": [
+        "Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.",
+        "Every late invoice is a small business owner deciding whether to pay themselves this month.",
+        "Compliance isn't the brake. It's what lets us drive fast, safely."
+      ],
+      "quoteBy": "Ledgerly leadership team",
+      "graphics": [],
+      "captions": {
+        "Leadership": "\"Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.\"\n\nThat's the line I keep coming back to from our webinar last month.\n\n[YOUR STORY: one sentence about a moment that showed you this was true.]\n\nThe recording is in the comments. 30 minutes, worth it.",
+        "Sales": "Every late invoice is a small business owner deciding whether to pay themselves this month.\n\n[YOUR STORY: one sentence about a conversation where you heard this.]\n\nOur leadership team unpacked this in a 30-minute webinar. Link below if you missed it.",
+        "Anyone": "Missed our webinar? Here's the line that stuck with me:\n\n\"Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.\"\n\n[YOUR STORY: one sentence on why it stuck with you.]"
+      },
+      "makeItYours": [
+        "Which line from the webinar stuck with you?",
+        "Where have you seen cash flow stress up close?",
+        "What's one takeaway you'd pass on?"
+      ]
+    },
+    {
+      "id": "blog-what-late-payments-cost",
+      "title": "What Late Payments Really Cost a Small Business",
+      "type": "Blog",
+      "format": "Article · 6 min read",
+      "date": "2026-10-14",
+      "themes": ["Late payments", "Cash flow"],
+      "headline": "The hidden cost",
+      "summary": "Beyond the money: the hours spent chasing, the hires delayed, the owners who stop paying themselves. A plain-language breakdown of what late payments really cost.",
+      "link": "",
+      "quotes": [
+        "The cost of a late payment isn't on the invoice. It's in the hours you spend chasing it.",
+        "Our best sales conversations start with listening, not a demo."
+      ],
+      "quoteBy": "Ledgerly blog",
+      "graphics": [],
+      "captions": {
+        "Sales": "The cost of a late payment isn't on the invoice.\n\nIt's the hours spent chasing it. The hire you put off. The paycheque you skip.\n\n[YOUR STORY: one sentence about a customer who told you what late payments cost them.]\n\nGreat breakdown from our team, linked below.",
+        "Customer Success": "One of the first things customers tell me: they didn't realize how much time they spent chasing payments until they stopped.\n\n[YOUR STORY: one sentence about a customer who felt this.]\n\nThis piece explains the hidden costs really well.",
+        "Anyone": "Late payments cost more than money. ⏳\n\n[YOUR STORY: one sentence on why this matters to you.]\n\nWorth a 6-minute read."
+      },
+      "makeItYours": [
+        "What hidden cost have you seen a business pay?",
+        "Has a customer ever told you how much time they lost?",
+        "Who in your network should read this?"
+      ]
+    },
+    {
+      "id": "harbour-plumbing",
+      "title": "Harbour Plumbing hires two apprentices",
+      "type": "Customer story",
+      "format": "Video · 2 min",
+      "date": "2026-11-05",
+      "themes": ["Growth", "Small business life"],
+      "headline": "2 new apprentices",
+      "summary": "Marcus Bell's 6-person plumbing company used to hold back on hiring because cash came in too unpredictably. With steady, on-time payments, he hired two apprentices this fall.",
+      "link": "",
+      "quotes": [
+        "I didn't need more work. I needed the work I'd done to pay me on time.",
+        "Hiring used to feel like gambling. Now it feels like a plan."
+      ],
+      "quoteBy": "Marcus Bell, Owner, Harbour Plumbing",
+      "graphics": [],
+      "captions": {
+        "Sales": "\"I didn't need more work. I needed the work I'd done to pay me on time.\"\n\nMarcus Bell runs a 6-person plumbing company. Unpredictable payments kept him from hiring.\n\n[YOUR STORY: one sentence about a business owner you know who's held back for the same reason.]\n\nThis fall he hired two apprentices.",
+        "Leadership": "Two apprentices just started at Harbour Plumbing.\n\nThat's two young people learning a trade, because their future boss finally had cash flow he could plan around.\n\n[YOUR STORY: one sentence on why stories like this matter to you.]\n\nThis is the ripple effect of getting paid on time.",
+        "Anyone": "Hiring used to feel like gambling for Marcus. Now it feels like a plan. 🔧\n\n[YOUR STORY: one sentence on what this story means to you.]"
+      },
+      "makeItYours": [
+        "Do you know a business owner who's held off on hiring?",
+        "What's the ripple effect you see when a small business grows?",
+        "Why does this story make you proud?"
+      ]
+    },
+    {
+      "id": "five-invoice-mistakes",
+      "title": "5 invoice mistakes that slow down payment",
+      "type": "Guide",
+      "format": "Carousel · 7 slides",
+      "date": "2026-11-20",
+      "themes": ["Tips", "Late payments"],
+      "headline": "5 invoice mistakes",
+      "summary": "A quick, practical carousel: vague due dates, missing PO numbers, one payment option, no reminders, and sending invoices late. Each with a simple fix.",
+      "link": "",
+      "quotes": [
+        "Net 30 isn't a due date. A date is a due date.",
+        "The easiest invoice to pay is the one with a 'Pay now' button."
+      ],
+      "quoteBy": "Ledgerly guide",
+      "graphics": [],
+      "captions": {
+        "Sales": "The #1 invoice mistake I see? \"Net 30\" instead of an actual date.\n\n[YOUR STORY: one sentence about the most common invoice mistake you've seen.]\n\nHere are 5 quick fixes that get you paid faster. 👇",
+        "Customer Success": "Small changes, big difference. These are the 5 invoice fixes I recommend to almost every customer.\n\n[YOUR STORY: one sentence about a customer who got paid faster after one of these.]",
+        "Anyone": "5 invoice mistakes that slow down payment, and how to fix them. Save this one. 📌\n\n[YOUR STORY: one sentence on which tip you'd use first.]"
+      },
+      "makeItYours": [
+        "Which mistake do you see most often?",
+        "Which tip would help someone you know?",
+        "Have you ever made one of these mistakes yourself?"
+      ]
+    },
+    {
+      "id": "trust-in-fintech",
+      "title": "Building Trust in Fintech, One Boring Moment at a Time",
+      "type": "Blog",
+      "format": "Article · 5 min read",
+      "date": "2026-09-30",
+      "themes": ["Trust and security"],
+      "headline": "Trust is boring",
+      "summary": "Our Chief Risk & Compliance Officer on why trust in fintech is built in the moments customers never notice, like every transaction that simply works.",
+      "link": "",
+      "quotes": [
+        "Trust in fintech is earned in boring moments, like every transaction that just works.",
+        "Small businesses don't read our security policy. They feel it when nothing goes wrong."
+      ],
+      "quoteBy": "Priya Shah, Chief Risk & Compliance Officer, Ledgerly",
+      "graphics": [],
+      "captions": {
+        "Leadership": "\"Small businesses don't read our security policy. They feel it when nothing goes wrong.\"\n\n[YOUR STORY: one sentence on what trust means in your role.]\n\nOur Chief Risk Officer wrote a great piece on why trust is built in boring moments.",
+        "Customer Success": "Customers rarely notice when everything works. That's the point.\n\n[YOUR STORY: one sentence about a time a customer told you they trust us, and why.]\n\nGreat read from our risk team.",
+        "Anyone": "Trust is built in boring moments. 🔒\n\n[YOUR STORY: one sentence on why this resonates with you.]"
+      },
+      "makeItYours": [
+        "What does trust look like in your day-to-day work?",
+        "When did a customer show they trusted us?",
+        "What 'boring moment' are you proud of?"
+      ]
+    },
+    {
+      "id": "fall-product-update",
+      "title": "Fall product update: Smart Reminders",
+      "type": "Product update",
+      "format": "Video · 60 sec",
+      "date": "2026-11-10",
+      "themes": ["Product", "Late payments"],
+      "headline": "Smart Reminders",
+      "summary": "Smart Reminders sends friendly, perfectly timed nudges to customers who haven't paid, so owners never have to write an awkward follow-up email again.",
+      "link": "",
+      "quotes": [
+        "Nobody started a business to write awkward 'just following up' emails.",
+        "Smart Reminders get invoices paid an average of 11 days sooner."
+      ],
+      "quoteBy": "Ledgerly product team",
+      "graphics": [],
+      "captions": {
+        "Sales": "Nobody started a business to write awkward \"just following up\" emails.\n\n[YOUR STORY: one sentence about a customer who'll love this.]\n\nSmart Reminders is live: friendly, well-timed nudges that get invoices paid an average of 11 days sooner.",
+        "Customer Success": "The feature request I've heard most this year is finally here. 🎉\n\n[YOUR STORY: one sentence about the customer who asked you for this.]\n\nSmart Reminders: no more awkward follow-up emails.",
+        "Anyone": "New at Ledgerly: Smart Reminders. ⏰\n\n[YOUR STORY: one sentence on why you're excited about it.]"
+      },
+      "makeItYours": [
+        "Which customer will love this most?",
+        "What's the most awkward follow-up email you've had to send?",
+        "What part of building this were you close to?"
+      ]
+    },
+    {
+      "id": "team-spotlight-amara",
+      "title": "Team spotlight: Amara, Support Lead",
+      "type": "Culture",
+      "format": "Photo post + Q&A",
+      "date": "2026-11-21",
+      "themes": ["Culture", "Our team"],
+      "headline": "Meet Amara",
+      "summary": "Amara has answered more than 6,000 customer calls at Ledgerly. She talks about the call she'll never forget and why she still loves picking up the phone.",
+      "link": "",
+      "quotes": [
+        "Behind every support ticket is someone's livelihood. I never forget that.",
+        "The best call is the one where someone laughs at the end."
+      ],
+      "quoteBy": "Amara Osei, Support Lead, Ledgerly",
+      "graphics": [],
+      "captions": {
+        "Leadership": "\"Behind every support ticket is someone's livelihood.\"\n\nThat's Amara, our Support Lead. 6,000+ calls, and she still means it every time.\n\n[YOUR STORY: one sentence about a moment you saw Amara (or your support team) at their best.]",
+        "Anyone": "Meet Amara. 💬 6,000+ customer calls and still loves picking up the phone.\n\n[YOUR STORY: one sentence about what it's like working with her.]"
+      },
+      "makeItYours": [
+        "What's one thing you've learned from Amara or the support team?",
+        "Why are you proud of the people you work with?",
+        "What does great support look like to you?"
+      ]
+    },
+    {
+      "id": "small-business-summit",
+      "title": "Recap: Small Business Summit 2026",
+      "type": "Event",
+      "format": "Photo recap · 8 images",
+      "date": "2026-10-22",
+      "themes": ["Events", "Small business life"],
+      "headline": "Summit recap",
+      "summary": "Highlights from our booth and keynote at the Small Business Summit: 400+ conversations, a packed session on cash flow, and a lot of coffee.",
+      "link": "",
+      "quotes": [
+        "Customers don't buy software. They buy back their Friday afternoons.",
+        "If you can't explain the value in one sentence to a bakery owner, you don't understand it yet."
+      ],
+      "quoteBy": "David Okafor, Chief Revenue Officer, Ledgerly",
+      "graphics": [],
+      "captions": {
+        "Sales": "400+ conversations at the Small Business Summit, and one line kept coming up: \"I just want my Friday afternoons back.\"\n\n[YOUR STORY: one sentence about a conversation that stuck with you.]",
+        "Leadership": "What I took away from the Small Business Summit: business owners don't want more tools. They want more time.\n\n[YOUR STORY: one sentence about a moment from the event.]",
+        "Anyone": "What a week at the Small Business Summit! ☕\n\n[YOUR STORY: one sentence about your favourite moment.]"
+      },
+      "makeItYours": [
+        "What conversation from the event stuck with you?",
+        "What did you learn from someone you met?",
+        "What was your favourite moment?"
+      ]
+    },
+    {
+      "id": "podcast-founder-origin",
+      "title": "Podcast: Why I started Ledgerly",
+      "type": "Podcast",
+      "format": "Episode · 25 min",
+      "date": "2026-09-16",
+      "themes": ["Our story", "Small business life"],
+      "headline": "The kitchen table",
+      "summary": "Our CEO, Maya Chen, on the Main Street Money podcast: her dad's restaurant, the kitchen table after midnight, and the moment she decided to build Ledgerly.",
+      "link": "",
+      "quotes": [
+        "My dad never called it cash flow management. He called it 'the bills.'",
+        "We didn't start Ledgerly to build software. We started it because of a kitchen table after midnight."
+      ],
+      "quoteBy": "Maya Chen, CEO, Ledgerly",
+      "graphics": [],
+      "captions": {
+        "Leadership": "\"My dad never called it cash flow management. He called it 'the bills.'\"\n\nOur CEO Maya told the Ledgerly origin story on the Main Street Money podcast.\n\n[YOUR STORY: one sentence on why you joined, or why this story matters to you.]",
+        "Anyone": "Ever wondered why Ledgerly exists? It started at a kitchen table after midnight. 🎧\n\n[YOUR STORY: one sentence on what drew you to work here.]"
+      },
+      "makeItYours": [
+        "Why did you join Ledgerly?",
+        "Does Maya's story remind you of anyone in your life?",
+        "What's your favourite part of the episode?"
+      ]
+    },
+    {
+      "id": "cash-flow-checklist",
+      "title": "The month-end cash flow checklist",
+      "type": "Guide",
+      "format": "One-page PDF",
+      "date": "2026-08-27",
+      "themes": ["Tips", "Cash flow"],
+      "headline": "Month-end checklist",
+      "summary": "A free, printable one-page checklist for small business owners: the 8 things to check at the end of every month to stay ahead of cash flow surprises.",
+      "link": "",
+      "quotes": [
+        "Ten minutes at month-end saves ten sleepless nights.",
+        "You can't fix cash flow you can't see."
+      ],
+      "quoteBy": "Ledgerly guide",
+      "graphics": [],
+      "captions": {
+        "Sales": "Ten minutes at month-end saves ten sleepless nights.\n\n[YOUR STORY: one sentence about a business owner you know who'd use this.]\n\nFree printable checklist below. Share it with someone who needs it.",
+        "Customer Success": "The checklist I send to new customers in their first week. 📋\n\n[YOUR STORY: one sentence about how a customer has used it.]",
+        "Anyone": "Free month-end cash flow checklist. Print it, stick it on the fridge. 📋\n\n[YOUR STORY: one sentence on who you'd send this to.]"
+      },
+      "makeItYours": [
+        "Who in your life would use this checklist?",
+        "Which item on the list matters most?",
+        "What's a month-end habit that's helped you?"
+      ]
+    }
+  ]
+}

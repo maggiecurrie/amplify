@@ -2,51 +2,55 @@
 
 **Your content deserves more than one post.**
 
-🌐 **[See the live share kit](https://maggiecurrie.github.io/amplify/)**
+🌐 **[Open the live library](https://maggiecurrie.github.io/amplify/)**
 
 ---
 
 ## The problem
 
-You make great content: a customer video, a webinar, a report. It goes up on the company page, gets a day of attention, and disappears.
+Social media teams publish every week: customer videos, blogs, reports, event recaps, product news. Each piece goes up on the company page, gets a day of attention, and disappears.
 
-But it could live on every salesperson's, leader's, and teammate's LinkedIn too. Most of the time it doesn't, because sharing it takes effort, and nobody wants to post the same copy-and-paste caption as everyone else.
+It could live on every salesperson's, leader's, and teammate's LinkedIn too. Usually it doesn't, because finding the right content and writing a post takes effort, and nobody wants to post the same copy-and-paste caption as everyone else.
 
-## The fix: a share kit
+## How Amplify works
 
-A share kit is **one page with everything your team needs to share a piece of content in about five minutes, in their own voice.**
+**1. A living library.** Everything the team makes goes into one searchable library. Filter by type, theme, or role, or search for a topic, customer, or quote.
 
-| What's in a kit | Why it's there |
+**2. Pick, then build a share kit.** Choose the pieces you want to push this week. Amplify turns them into a **share kit**: one link you send to the whole team.
+
+**3. Everyone shares, in their own voice.** For each piece, the kit includes:
+
+| What's in it | Why |
 |---|---|
-| **The story** | So everyone understands it before they share it |
+| **The story** | So people understand it before they share it |
 | **Pull quotes** | The best lines, copied in one click |
-| **Graphics** | Ready-made images, sized for LinkedIn |
-| **Captions by role** | Sales, leadership, and customer success each get their own angle |
-| **Make it yours** | A marked gap and three quick questions, so no two posts are the same |
-| **Simple rules** | What to do, and what to avoid |
+| **Graphics** | Ready-made images, or quote cards generated automatically, sized for LinkedIn |
+| **Captions by role** | Sales, leadership, customer success, and anyone each get their own angle |
+| **Make it yours** | A highlighted **[YOUR STORY]** gap and three quick questions |
 | **Copy + Open LinkedIn** | From reading to posted in about a minute |
 
 ## The human part
 
-Every caption includes a highlighted **[YOUR STORY]** gap. AI and templates can do the heavy lifting, but the post only works when a real person adds one real sentence. That's what makes it theirs, and it's what makes people stop scrolling.
+Templates and AI can do the heavy lifting, but a post only works when a real person adds one real sentence. Every caption leaves a highlighted gap for exactly that. No two people post the same words, and that's why people stop scrolling.
 
-## Make your own kit
+## Keeping it alive
 
-1. Copy the **[share kit template](share-kit-template.md)** and fill it in for your content.
-2. Duplicate [`index.html`](index.html) and swap in your story, quotes, graphics, and captions.
-3. Send the link to your team.
+The library grows every week. Adding a new piece of content is one entry in [`content.json`](content.json), and the site updates itself.
+
+👉 **[How to add content](ADDING-CONTENT.md)** (about 5 minutes per piece)
 
 ## What's in this repository
 
 | File | What it is |
 |---|---|
-| [`index.html`](index.html) | The sample share kit (the live website) |
-| [`assets/`](assets/) | The kit's graphics |
-| [`share-kit-template.md`](share-kit-template.md) | A blank template for planning a new kit |
+| [`index.html`](index.html) | The website: library, search, kit builder, and share kits |
+| [`content.json`](content.json) | The library itself, one entry per piece of content |
+| [`assets/`](assets/) | Graphics |
+| [`ADDING-CONTENT.md`](ADDING-CONTENT.md) | Step-by-step guide and template for adding content |
 
 ---
 
-*The sample kit uses a fictional company (Ledgerly) and a fictional customer (Rosa's Bakery). All names, quotes, and figures are invented.*
+*The sample library uses a fictional fintech company, Ledgerly. All customers, people, quotes, and figures are invented.*
 
 Built by **Mary Anne Margaret Currie (Maggie)** · [LinkedIn](https://www.linkedin.com/in/mary-anne-maggie-currie/)
 *Human, story-led content at scale with AI-enabled systems.*
