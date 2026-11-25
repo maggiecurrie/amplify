@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share kit: Rosa's Bakery · Amplify</title>
+<meta name="description" content="A sample Amplify share kit: everything a team member needs to share a customer story on LinkedIn, in their own voice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#000; --muted:#555; --line:#e5e5e5; --soft:#f4f4f4; --radius:14px; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#fff; line-height:1.6; font-size:17px; }
+  a { color: var(--ink); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { font-weight:800; line-height:1.08; letter-spacing:-0.03em; margin:0 0 14px; }
+  h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); letter-spacing:-0.04em; }
+  h1 em, h2 em { font-style: italic; font-weight: 400; }
+  h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); }
+  h3 { font-size: 1.1rem; letter-spacing:-0.01em; }
+  .eyebrow { font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+  .muted { color: var(--muted); }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+
+  nav { padding: 20px 0; }
+  nav .wrap { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  .brand { font-weight:800; letter-spacing:-0.02em; text-decoration:none; }
+  nav a.back { color: var(--muted); text-decoration:none; font-size:0.95rem; }
+
+  .banner { background: var(--ink); color:#fff; font-size:0.9rem; padding:10px 0; text-align:center; }
+  .banner em { color:#bbb; }
+
+  header { padding: 48px 0 64px; }
+  .meta { display:flex; gap:10px; flex-wrap:wrap; margin: 20px 0 0; }
+  .pill { font-size:0.8rem; font-weight:600; border:1px solid var(--ink); border-radius:999px; padding:4px 12px; }
+  .pill.solid { background:var(--ink); color:#fff; }
+
+  .steps-mini { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:14px; margin-top:36px; }
+  .steps-mini div { background: var(--soft); border-radius: var(--radius); padding:18px 20px; }
+  .steps-mini b { display:block; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px; }
+
+  .video { aspect-ratio: 16/9; background: var(--ink); border-radius: var(--radius); display:grid; place-items:center; color:#fff; text-align:center; position:relative; overflow:hidden; }
+  .video .play { width:84px; height:84px; border-radius:50%; border:2px solid #fff; display:grid; place-items:center; margin:0 auto 18px; }
+  .video .play::after { content:""; border-left:24px solid #fff; border-top:15px solid transparent; border-bottom:15px solid transparent; margin-left:6px; }
+  .video p { margin:0; font-weight:700; font-size:1.2rem; }
+  .video small { color:#aaa; font-style:italic; }
+  .story { display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px; margin-top: 28px; align-items:start; }
+  .facts { list-style:none; padding:0; margin:0; }
+  .facts li { border-bottom:1px solid var(--line); padding:12px 0; display:flex; justify-content:space-between; gap:16px; }
+  .facts li span:first-child { color: var(--muted); }
+  .facts li span:last-child { font-weight:700; text-align:right; }
+
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:999px; font-weight:600; font-size:0.92rem; text-decoration:none; cursor:pointer; font-family:inherit; border:1.5px solid var(--ink); background:#fff; color:var(--ink); }
+  .btn:hover, .btn.primary { background: var(--ink); color:#fff; }
+  .btn.primary:hover { background:#333; }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; }
+
+  .quotes { display:grid; gap:14px; margin-top:28px; }
+  .quote { border:1px solid var(--line); border-radius: var(--radius); padding:22px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+  .quote p { margin:0; font-size:1.15rem; font-weight:700; letter-spacing:-0.01em; }
+  .quote small { display:block; color:var(--muted); font-style:italic; font-weight:400; font-size:0.9rem; margin-top:4px; }
+
+  .assets { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:18px; margin-top:28px; }
+  .asset { border:1px solid var(--line); border-radius: var(--radius); overflow:hidden; }
+  .asset img { width:100%; display:block; aspect-ratio:1; object-fit:cover; border-bottom:1px solid var(--line); }
+  .asset div { padding:14px 16px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .asset span { font-size:0.9rem; font-weight:600; }
+
+  .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-top:28px; }
+  .tab { padding:9px 16px; border-radius:999px; border:1.5px solid var(--ink); background:#fff; font-weight:600; font-family:inherit; font-size:0.92rem; cursor:pointer; }
+  .tab[aria-selected="true"] { background: var(--ink); color:#fff; }
+  .caption { margin-top:18px; border:2px solid var(--ink); border-radius: var(--radius); padding:26px 28px; }
+  .caption .who { font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+  .caption pre { font-family:inherit; white-space:pre-wrap; margin:0 0 20px; font-size:1rem; }
+  .gap { background: var(--ink); color:#fff; padding:1px 6px; border-radius:4px; font-weight:600; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .why { font-size:0.92rem; color:var(--muted); margin: -6px 0 18px; font-style: italic; }
+
+  .yours { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; margin-top:28px; }
+  .yours div { background: var(--soft); border-radius: var(--radius); padding:22px 24px; }
+  .yours b { display:block; font-size:2rem; font-weight:800; line-height:1; margin-bottom:10px; }
+  .yours p { margin:0; font-weight:600; }
+
+  .rules { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:28px; }
+  .rules div { border:1px solid var(--line); border-radius: var(--radius); padding:22px 24px; }
+  .rules ul { margin:0; padding-left:20px; color: var(--muted); }
+  .rules li { margin-bottom:6px; }
+
+  footer { background: var(--ink); color:#8a8a8a; padding:40px 0; font-size:0.88rem; }
+  footer a { color:#fff; }
+
+  .toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:var(--ink); color:#fff; padding:12px 20px; border-radius:999px; font-weight:600; font-size:0.92rem; opacity:0; transition: all .2s; pointer-events:none; }
+  .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+  @media (max-width: 760px) { .story, .rules { grid-template-columns: 1fr; } .quote { flex-direction:column; align-items:flex-start; } }
+</style>
+</head>
+<body>
+
+<div class="banner">Sample share kit <em>· Ledgerly and Rosa's Bakery are fictional</em></div>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="../../">Amplify</a>
+    <a class="back" href="../../">← Back to Amplify</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Share kit · Customer story</div>
+    <h1>Rosa's Bakery: <em>from chasing invoices to Sunday dinners.</em></h1>
+    <p class="muted" style="max-width:640px;font-size:1.15rem">Everything you need to share this story on LinkedIn, in your own voice, in about five minutes.</p>
+    <div class="meta">
+      <span class="pill solid">Ready to share</span>
+      <span class="pill">Best for: Sales · Leadership · Customer Success</span>
+      <span class="pill">Share by: Friday</span>
+    </div>
+    <div class="steps-mini">
+      <div><b>1 · Watch</b>Get the story in 90 seconds.</div>
+      <div><b>2 · Pick</b>Grab a quote, a graphic, and a caption for your role.</div>
+      <div><b>3 · Make it yours</b>Add one real sentence from your experience.</div>
+      <div><b>4 · Post</b>Copy, open LinkedIn, paste, share.</div>
+    </div>
+  </div>
+</header>
+
+<section id="story">
+  <div class="wrap">
+    <div class="eyebrow">1 · The story</div>
+    <h2>Watch first. <em>It's 90 seconds.</em></h2>
+    <div class="story">
+      <div class="video" role="img" aria-label="Video placeholder">
+        <div>
+          <div class="play"></div>
+          <p>Rosa's Bakery × Ledgerly</p>
+          <small>Video placeholder: embed the YouTube or Vimeo link here</small>
+        </div>
+      </div>
+      <div>
+        <p style="margin-top:0">Rosa Delgado runs a 12-person bakery that supplies cafés across the city. Her wholesale customers paid on average <strong>64 days late</strong>, so she spent Sunday nights chasing invoices instead of being with her family.</p>
+        <p>With Ledgerly's automatic reminders and early payment options, she now gets paid in <strong>9 days</strong>, and has her Sundays back.</p>
+        <ul class="facts">
+          <li><span>Customer</span><span>Rosa Delgado, Owner</span></li>
+          <li><span>Business</span><span>Rosa's Bakery · 12 people</span></li>
+          <li><span>Before</span><span>64 days to get paid</span></li>
+          <li><span>After</span><span>9 days to get paid</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quotes">
+  <div class="wrap">
+    <div class="eyebrow">2 · Pull quotes</div>
+    <h2>Rosa's words. <em>Use them exactly.</em></h2>
+    <div class="quotes">
+      <div class="quote"><p>"I used to spend Sunday nights chasing invoices. Now I spend them with my kids."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;I used to spend Sunday nights chasing invoices. Now I spend them with my kids.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
+      <div class="quote"><p>"I opened a bakery to bake. Not to be a debt collector."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;I opened a bakery to bake. Not to be a debt collector.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
+      <div class="quote"><p>"The first month the money came in on time, I cried in the walk-in fridge."<small>Rosa Delgado, Owner, Rosa's Bakery</small></p><button class="btn" data-copy="&quot;The first month the money came in on time, I cried in the walk-in fridge.&quot; (Rosa Delgado, Owner, Rosa's Bakery)">Copy</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="assets">
+  <div class="wrap">
+    <div class="eyebrow">2 · Graphics</div>
+    <h2>Ready-made images. <em>Sized for LinkedIn.</em></h2>
+    <div class="assets">
+      <div class="asset"><img src="quote-card-sunday-nights.png" alt="Quote card: I used to spend Sunday nights chasing invoices. Now I spend them with my kids."><div><span>Sunday nights</span><a class="btn" href="quote-card-sunday-nights.png" download>Download</a></div></div>
+      <div class="asset"><img src="quote-card-9-days.png" alt="Stat card: From 64 days to 9 days."><div><span>64 → 9 days</span><a class="btn" href="quote-card-9-days.png" download>Download</a></div></div>
+      <div class="asset"><img src="quote-card-bake.png" alt="Quote card: I opened a bakery to bake. Not to be a debt collector."><div><span>Bake, not chase</span><a class="btn" href="quote-card-bake.png" download>Download</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="captions">
+  <div class="wrap">
+    <div class="eyebrow">2 · Captions</div>
+    <h2>Pick your role. <em>Then make it yours.</em></h2>
+    <p class="muted" style="max-width:640px">Each caption is a starting point, not a script. The highlighted part is where <strong>your</strong> story goes. Posts with a real personal detail get far more conversation than copy-and-paste.</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-role="sales">Sales</button>
+      <button class="tab" role="tab" aria-selected="false" data-role="leader">Leadership</button>
+      <button class="tab" role="tab" aria-selected="false" data-role="cs">Customer Success</button>
+      <button class="tab" role="tab" aria-selected="false" data-role="anyone">Anyone at Ledgerly</button>
+    </div>
+
+    <div class="caption" role="tabpanel">
+      <div class="who" id="cap-who"></div>
+      <p class="why" id="cap-why"></p>
+      <pre id="cap-text"></pre>
+      <div class="btns">
+        <button class="btn primary" id="copy-caption">Copy caption</button>
+        <a class="btn" href="https://www.linkedin.com/feed/?shareActive=true" target="_blank" rel="noopener">Open LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="yours">
+  <div class="wrap">
+    <div class="eyebrow">3 · Make it yours</div>
+    <h2>One real sentence <em>changes everything.</em></h2>
+    <p class="muted" style="max-width:640px">Answer any one of these and swap it in for the highlighted part of your caption.</p>
+    <div class="yours">
+      <div><b>01</b><p>Which customer of yours does Rosa remind you of? What's one thing they told you?</p></div>
+      <div><b>02</b><p>When did you last see a business owner stressed about getting paid? What happened?</p></div>
+      <div><b>03</b><p>Why does this story matter to <em>you</em>, not just to the company?</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap">
+    <div class="eyebrow">4 · Before you post</div>
+    <h2>A few simple rules.</h2>
+    <div class="rules">
+      <div><h3>Do</h3><ul>
+        <li>Add your own sentence, even a short one</li>
+        <li>Tag Ledgerly, and Rosa's Bakery if they've agreed</li>
+        <li>Reply to comments within a day</li>
+        <li>Post any day before Friday, so we don't all post at once</li>
+      </ul></div>
+      <div><h3>Don't</h3><ul>
+        <li>Post the caption word for word</li>
+        <li>Change Rosa's quotes or numbers</li>
+        <li>Promise results to other customers</li>
+        <li>Share anything not in this kit about Rosa's business</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    A sample share kit from <a href="../../">Amplify</a>, a human-led, AI-powered system for giving great content a longer life. Built by <a href="https://www.linkedin.com/in/mary-anne-maggie-currie/">Maggie Currie</a>. Ledgerly, Rosa's Bakery, and all people and figures here are fictional.
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+<script>
+const captions = {
+  sales: {
+    who: "For Sales",
+    why: "Angle: you hear this problem from prospects every week.",
+    text: `"I opened a bakery to bake. Not to be a debt collector."
+
+That's Rosa Delgado. She runs a 12-person bakery, and until this year she spent her Sunday nights chasing invoices.
+
+[YOUR STORY: one sentence about a customer or prospect you've talked to who felt the same way.]
+
+Her customers used to take 64 days to pay. Now it's 9.
+
+If you run a small business and late payments are eating your weekends, I'd love to hear how you handle it.`
+  },
+  leader: {
+    who: "For Leadership",
+    why: "Angle: why this story is the reason the company exists.",
+    text: `This is why we do what we do.
+
+Rosa Delgado runs a 12-person bakery. Her wholesale customers took 64 days, on average, to pay her. So every Sunday night, instead of being with her kids, she was chasing invoices.
+
+Today she gets paid in 9 days. And she has her Sundays back.
+
+[YOUR STORY: one sentence on what this story means to you personally, or why you started or joined Ledgerly.]
+
+Small businesses don't need more software. They need their time back.`
+  },
+  cs: {
+    who: "For Customer Success",
+    why: "Angle: you see the before and after up close.",
+    text: `"The first month the money came in on time, I cried in the walk-in fridge."
+
+Rosa Delgado, owner of Rosa's Bakery, told us that, and honestly it's my favourite part of this job.
+
+[YOUR STORY: one sentence about a moment with a customer you've supported that felt like this.]
+
+64 days to get paid → 9 days. But the number that matters more: Sunday nights back with her family.
+
+Proud of this one.`
+  },
+  anyone: {
+    who: "For anyone at Ledgerly",
+    why: "Angle: simple and proud. Great if you've never posted about work before.",
+    text: `Meet Rosa. 🥐
+
+She runs a bakery, and she used to spend her Sunday nights chasing late invoices.
+
+Now she gets paid in 9 days instead of 64, and spends those Sundays with her kids.
+
+[YOUR STORY: one sentence on why this made you proud to work here.]
+
+Stories like this are why I love what we're building at Ledgerly.`
+  }
+};
+
+const who = document.getElementById("cap-who");
+const why = document.getElementById("cap-why");
+const text = document.getElementById("cap-text");
+const toast = document.getElementById("toast");
+let current = "sales";
+
+function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function render(role){
+  current = role;
+  const c = captions[role];
+  who.textContent = c.who;
+  why.textContent = c.why;
+  text.innerHTML = esc(c.text).replace(/\[YOUR STORY:[^\]]*\]/, m => `<span class="gap">${m}</span>`);
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.role === role));
+}
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => render(t.dataset.role)));
+
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add("show");
+  clearTimeout(showToast.t);
+  showToast.t = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+async function copy(str, msg){
+  try { await navigator.clipboard.writeText(str); showToast(msg); }
+  catch (e) {
+    const ta = document.createElement("textarea"); ta.value = str; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); showToast(msg); } catch (_) { showToast("Select the text to copy it"); }
+    ta.remove();
+  }
+}
+document.getElementById("copy-caption").addEventListener("click", () =>
+  copy(captions[current].text, "Copied. Now replace [YOUR STORY] with yours"));
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copy(b.dataset.copy, "Quote copied")));
+
+render("sales");
+</script>
+</body>
+</html>

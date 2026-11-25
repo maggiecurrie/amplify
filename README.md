@@ -11,6 +11,18 @@ Every company is sitting on great content: webinars, blogs, keynotes, reports. A
 
 ---
 
+## Share kits
+
+Every new piece of content (a customer video, a webinar, a report) gets a **share kit**: one page with everything a teammate needs to post it on LinkedIn in about five minutes.
+
+- **The story** and the asset (video, graphics)
+- **Pull quotes**, copied in one click
+- **Captions by role**: sales, leadership, customer success, anyone
+- **Make it yours**: a marked gap plus three quick questions, so no two people post the same words
+- **Simple rules** for what to do and avoid
+
+👉 **[See a sample share kit: Rosa's Bakery](https://maggiecurrie.github.io/amplify/kits/rosas-bakery/)** · [Share kit template](templates/share-kit-template.md)
+
 ## The problem
 
 - Great content gets published once, then forgotten.
@@ -57,6 +69,8 @@ The full playbook is in **[How it works](docs/how-it-works.md)**.
 | [`prompts/`](prompts/) | Tested AI prompts for each step |
 | [`checklists/`](checklists/) | The human edit and leader approval checklists |
 | [`example/ledgerly/`](example/ledgerly/) | A full worked example, from webinar to published post |
+| [`kits/`](kits/) | Share kits: one page per piece of content, ready for the team to post |
+| [`templates/`](templates/) | A blank share kit template |
 
 ## See the human difference
 
