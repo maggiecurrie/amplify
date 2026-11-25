@@ -139,6 +139,14 @@
   .rules ul { margin:0; padding-left:18px; color:var(--muted); }
   .rules li { margin-bottom:4px; }
 
+  .scale { padding:80px 0 96px; border-top:1px solid var(--line); background:var(--soft); }
+  .scale-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:32px; }
+  .scale-grid div { background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:22px 24px; }
+  .scale-grid b { display:block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .scale-grid h3 { margin-bottom:6px; }
+  .scale-grid p { margin:0; color:var(--muted); font-size:0.95rem; }
+  .human-note { margin-top:28px; background:var(--ink); color:#fff; border-radius:var(--radius); padding:22px 26px; font-size:1.05rem; }
+  .human-note em { color:#bbb; }
   footer { background:var(--ink); color:#8a8a8a; padding:36px 0 110px; font-size:0.86rem; }
   footer a { color:#fff; }
 
@@ -147,7 +155,7 @@
 
   @media (max-width:720px) {
     .panel { padding:20px 18px 60px; }
-    .rules { grid-template-columns:1fr; }
+    .rules, .scale-grid { grid-template-columns:1fr; }
     .quote { flex-direction:column; align-items:flex-start; }
     .tray input { width:100%; }
   }
@@ -205,6 +213,22 @@
 
       <div class="grid" id="grid"></div>
       <div class="empty" id="empty" hidden>Nothing matches that yet. Try another word, or clear the filters.</div>
+    </div>
+  </section>
+  <section class="scale" id="how-this-scales">
+    <div class="wrap">
+      <div class="eyebrow">How this scales</div>
+      <h2>This is the demo. <em>Here's how it runs at a real company.</em></h2>
+      <p class="muted" style="max-width:700px;font-size:1.05rem">This sample library is filled in by hand so you can see the experience. At a company publishing every week, the same system grows on its own, and people stay in charge of what goes out.</p>
+      <div class="scale-grid">
+        <div><b>01 · AI organizes</b><h3>Drop it in, AI does the prep</h3><p>Add a video, case study, webinar, or report, and AI reads the transcript or text, pulls the strongest quotes, tags the themes, and drafts captions for each role.</p></div>
+        <div><b>02 · Humans approve</b><h3>The social team signs off</h3><p>Nothing goes into the library until someone on the content team checks the quotes are exact, the facts are right, and every caption leaves room for a real story.</p></div>
+        <div><b>03 · More channels</b><h3>Beyond LinkedIn</h3><p>The same kit adapts to Instagram, X, Threads, email signatures, and newsletters, each with captions and image sizes that fit the platform.</p></div>
+        <div><b>04 · Comes to the team</b><h3>Delivered where people work</h3><p>A weekly kit lands in Slack or Teams on Monday, so sharing becomes a five-minute habit, not another tool to remember.</p></div>
+        <div><b>05 · Connected</b><h3>Pulls from where content lives</h3><p>New content flows in from YouTube, the blog, the CMS, or Google Drive automatically, so the library is always current.</p></div>
+        <div><b>06 · Measured</b><h3>See what goes further</h3><p>Track which pieces get shared most, by which teams, and what they add, so the content team learns what really resonates.</p></div>
+      </div>
+      <p class="human-note"><strong>What never changes:</strong> AI does the heavy lifting, <em>and a person always adds the story.</em></p>
     </div>
   </section>
 </main>

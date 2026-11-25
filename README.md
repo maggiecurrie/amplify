@@ -39,6 +39,19 @@ The library grows every week. Adding a new piece of content is one entry in [`co
 
 👉 **[How to add content](ADDING-CONTENT.md)** (about 5 minutes per piece)
 
+## How this scales
+
+This sample library is filled in by hand so people can see the experience. At a real company publishing every week, the same system would grow on its own, with people in charge of what goes out:
+
+- **AI organizes new content.** Drop in a video, case study, webinar, or report. AI reads it, pulls the strongest quotes, tags themes, and drafts captions for each role.
+- **Humans approve.** The content team checks every quote, fact, and caption before it goes into the library.
+- **More channels.** The same kit adapts to Instagram, X, Threads, email signatures, and newsletters.
+- **It comes to the team.** A weekly kit lands in Slack or Teams, so sharing becomes a five-minute habit.
+- **Connected.** Content flows in from YouTube, the blog, the CMS, or Google Drive automatically.
+- **Measured.** See which pieces get shared most, by whom, and what they add.
+
+**What never changes:** AI does the heavy lifting, and a person always adds the story.
+
 ## What's in this repository
 
 | File | What it is |
