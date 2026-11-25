@@ -2,31 +2,39 @@
 
 **Quote:** "Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem."
 **Source:** Webinar: Cash Flow Is a Story
-**Status:** AI first draft, waiting for Maya's story
+**Status:** Approved by Maya · Published 2026-11-03
 
 ---
 
 ## The post
 
-Cash flow isn't a spreadsheet problem.
+My dad ran a 30-seat restaurant for 22 years.
 
-It's a sleep-at-night problem.
+I don't remember him worrying about the food. I remember him at the kitchen table after midnight, with a calculator and a shoebox of receipts, working out who he could pay that week.
 
-When small business owners talk about money, they rarely start with numbers. They start with how it feels: the stress, the uncertainty, the late nights.
+He never once called it "cash flow management." He called it "the bills."
 
-**[STORY GAP: Maya, add a real moment here. Suggestions from your profile: your dad doing the books at the kitchen table, or the customer who took her first weekend off in two years.]**
+When I talk to small business owners now, they describe it the same way. Not in numbers. In moments. The recital they missed. The payroll they covered from their own savings.
 
-That's why we believe financial tools should do more than save time. They should give people peace of mind.
+Cash flow isn't a spreadsheet problem. It's a sleep-at-night problem.
 
-Because behind every invoice is a person.
+That's the whole reason Ledgerly exists. Not to make finance faster, but to give people their evenings back.
 
-What does cash flow stress look like in your business?
+My dad would have liked that.
+
+What's the "kitchen table" moment in your business?
 
 ---
 
-## Notes
+## What the human changed, and why
 
-- **Word count:** ~90 (target 120–200 once the story is added)
-- **Alternative hooks:**
-  - "The spreadsheet is just where the story gets written down."
-  - "Nobody ever told me about cash flow in numbers."
+| Change | Why |
+|---|---|
+| **Opened with Dad's restaurant, not the quote** | A real person in the first line stops the scroll. The quote lands harder once you've met him. |
+| **Added the shoebox and the calculator** | Specific, physical details no AI could have invented. This is the [STORY GAP], filled. |
+| **Cut "the stress, the uncertainty, the late nights"** | Three generic feelings replaced by one real image. |
+| **Cut "financial tools should… give people peace of mind"** | Sounded like a brand slogan. Maya would never say it. |
+| **Added "My dad would have liked that."** | Maya's own edit. The emotional turn of the whole post, in six words. |
+| **Changed the closing question** | The AI's question was generic. Maya's invites readers to share their own story. |
+
+**Result:** about 140 words, within Maya's range. Same quote, same idea, but now it's hers.
