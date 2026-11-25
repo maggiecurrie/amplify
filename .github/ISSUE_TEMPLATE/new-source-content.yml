@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing! Existing content is the fuel for the Leader Voice Engine.
+        Thanks for sharing! Existing content is the fuel for Amplify.
         A human will review it, pull the best quotes, and add them to the quote bank.
   - type: input
     id: title

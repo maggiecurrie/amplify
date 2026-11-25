@@ -1,6 +1,6 @@
 # Prompts
 
-Tested AI prompts for each step of the Leader Voice Engine. They work with any capable AI assistant (Claude, ChatGPT, Gemini, etc.).
+Tested AI prompts for each step of Amplify. They work with any capable AI assistant (Claude, ChatGPT, Gemini, etc.).
 
 | # | Prompt | Step | What it does |
 |---|---|---|---|
