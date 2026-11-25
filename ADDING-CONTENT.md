@@ -12,7 +12,7 @@ The library is a living thing. Every time your team publishes something (a video
 2. Find the line `"items": [`. Right below it, paste the template from the bottom of this page. New items go at the top.
 3. Fill in each field (see the guide below).
 4. Make sure there's a **comma** after your new entry's closing `}`, because it separates it from the next one.
-5. Click **Commit changes**, with a message like `Add: customer video, Northfield Rowing`.
+5. Click **Commit changes**, with a message like `Add: Q4 customer video, Harbour Plumbing`.
 
 If you'd like someone to review it first, choose **Create a new branch and start a pull request** when you commit. That's the "human approves" step.
 
@@ -20,17 +20,17 @@ If you'd like someone to review it first, choose **Create a new branch and start
 
 | Field | What to put | Example |
 |---|---|---|
-| `id` | A short, unique name with no spaces (used in kit links) | `northfield-rowing` |
-| `title` | The content's title | `Northfield Rowing: training smarter for the national final` |
-| `type` | One type, used for the filter buttons | `Customer story`, `Report`, `Webinar`, `Guide`, `Event`, `Product update`, `Culture`, `Podcast`, `Thought leadership` |
-| `format` | What it is and how long | `Video · 3 min` |
-| `date` | Publish date, as year-month-day | `2026-09-24` |
-| `themes` | 1–3 topics, used for search and the theme filter | `["Team performance", "Athlete stories"]` |
-| `headline` | 2–5 punchy words for the card | `Fastest final ever` |
+| `id` | A short, unique name with no spaces (used in kit links) | `harbour-plumbing` |
+| `title` | The content's title | `Harbour Plumbing hires two apprentices` |
+| `type` | One type, used for the filter buttons | `Customer story`, `Blog`, `Report`, `Webinar`, `Guide`, `Event`, `Product update`, `Culture`, `Podcast` |
+| `format` | What it is and how long | `Video · 2 min` |
+| `date` | Publish date, as year-month-day | `2026-11-05` |
+| `themes` | 1–3 topics, used for search and the theme filter | `["Growth", "Small business life"]` |
+| `headline` | 2–5 punchy words for the card | `2 new apprentices` |
 | `summary` | The story in 2–3 sentences | |
 | `link` | Link to the original content (or leave `""`) | |
 | `quotes` | 2–3 exact quotes. Never reword them. | |
-| `quoteBy` | Who said the quotes | `Mei Tanaka, Head Coach, Northfield Rowing Club` |
+| `quoteBy` | Who said the quotes | `Marcus Bell, Owner, Harbour Plumbing` |
 | `graphics` | Ready-made images, or leave `[]` and the site will make quote cards automatically | |
 | `captions` | A starting caption for each role. Include at least `Anyone`. | |
 | `makeItYours` | 3 quick questions that help people add their own story | |
